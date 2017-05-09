@@ -1,0 +1,13 @@
+services:
+    gbrfix_bigbrother.message_notificator:
+        class: Gbrfix\BigbrotherBundle\Service\MessageNotificator
+        arguments:
+            - "@mailer"
+            
+    gbrfix_bigbrother.message_listener:
+        class: Gbrfix\BigbrotherBundle\Service\MessageListener
+        arguments:
+            - "@gbrfix_bigbrother.message_notificator"
+            - ["gab", "julia"]
+        tags:
+            - { name: kernel.event_subscriber }

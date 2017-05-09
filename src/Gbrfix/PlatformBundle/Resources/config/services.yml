@@ -1,0 +1,60 @@
+services:
+    gbrfix_platform.antispam:
+        class: Gbrfix\PlatformBundle\Service\Antispam
+        arguments:
+            - "@mailer"
+            - 50
+        calls:
+            - [ setLocale, [%locale%] ]
+            
+    gbrfix_platform.twig.antispam_extension:
+        class: Gbrfix\PlatformBundle\Service\AntispamExtension
+        arguments:
+            - "@gbrfix_platform.antispam"
+        tags:
+            - { name: twig.extension }
+            
+    gbrfix_platform.application_mailer:
+        class: Gbrfix\PlatformBundle\Service\ApplicationMailer
+        arguments:
+            - "@mailer"
+            
+    gbrfix_platform.doctrine_listener.application_creation:
+        class: Gbrfix\PlatformBundle\DoctrineListener\ApplicationCreationListener
+        arguments:
+            - "@gbrfix_platform.application_mailer"
+        tags:
+            - { name: doctrine.event_listener, event: postPersist }
+            
+    gbrfix_platform.doctrine_listener.advert_creation:
+        class: Gbrfix\PlatformBundle\DoctrineListener\AdvertCreationListener
+        arguments:
+            - "@request_stack"
+        tags:
+            - { name: doctrine.event_listener, event: prePersist }
+            
+    gbrfix_platform.validator.antiflood:
+        class: Gbrfix\PlatformBundle\Validator\AntifloodValidator
+        arguments: 
+            - "@request_stack"
+            - "@doctrine.orm.entity_manager"
+            - 60
+        tags:
+            - { name:validator.constraint_validator, alias:gbrfix_platform_antiflood }
+            
+    gbrfix_platform.beta.html_adder:
+        class: Gbrfix\PlatformBundle\Service\BetaHTMLAdder
+        
+    gbrfix_platform.beta.listener:
+        class: Gbrfix\PlatformBundle\Service\BetaListener
+        arguments:
+            - "@gbrfix_platform.beta.html_adder"
+            - "2016-12-12"
+        tags:
+            - { name: kernel.event_listener, event: kernel.response, method: processBeta, priority: 2 }
+
+    gbrfix_platform.paramconverter.json:
+        class: Gbrfix\PlatformBundle\Service\JsonParamConverter
+        tags:
+            - { name: request.param_converter }
+        

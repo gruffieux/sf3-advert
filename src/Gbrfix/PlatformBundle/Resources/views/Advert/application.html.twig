@@ -1,0 +1,11 @@
+{% extends "GbrfixPlatformBundle::layout.html.twig" %}
+
+{% block title %}{{ 'Postulations'|trans }} - {{ parent() }}{% endblock %}
+
+{% block platform_body %}
+
+	<h2>{{ 'Mes postulations'|trans }}</h2>
+	
+	{{ include('GbrfixPlatformBundle:Advert:list.html.twig', {'listAdverts': listAdverts}) }}
+	
+{% endblock %}

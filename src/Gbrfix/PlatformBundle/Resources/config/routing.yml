@@ -1,0 +1,70 @@
+gbrfix_platform_home:
+    path:     /{page}
+    defaults:
+        _controller: GbrfixPlatformBundle:Advert:index
+        page:        1
+    requirements:
+        page: \d*
+        
+gbrfix_platform_view:
+    path:     /advert/{advert_id}
+    defaults:
+        _controller: GbrfixPlatformBundle:Advert:view
+    requirements:
+        id: \d+
+
+gbrfix_platform_add:
+    path:     /add
+    defaults:
+        _controller: GbrfixPlatformBundle:Advert:add
+
+gbrfix_platform_edit:
+    path:     /edit/{id}
+    defaults:
+        _controller: GbrfixPlatformBundle:Advert:edit
+    requirements:
+        id: \d+
+        
+gbrfix_platform_delete:
+    path:     /delete/{id}
+    defaults:
+        _controller: GbrfixPlatformBundle:Advert:delete
+    requirements:
+        id: \d+
+        
+gbrfix_platform_markers:
+    path:     /my
+    defaults:
+        _controller: GbrfixPlatformBundle:Advert:marker
+        page:        1
+    requirements:
+        page: \d*
+        
+gbrfix_platform_mark:
+    path:     /mark/{id}
+    defaults:
+        _controller: GbrfixPlatformBundle:Advert:mark
+    requirements:
+        id: \d+
+        
+gbrfix_platform_unmark:
+    path:     /unmark/{id}
+    defaults:
+        _controller: GbrfixPlatformBundle:Advert:unmark
+    requirements:
+        id: \d+
+       
+gbrfix_platform_apply:
+    path:     /apply/{id}
+    defaults:
+        _controller: GbrfixPlatformBundle:Advert:apply
+    requirements:
+        id: \d+
+        
+gbrfix_platform_applications:
+    path:     /my/application
+    defaults:
+        _controller: GbrfixPlatformBundle:Advert:application
+        page:        1
+    requirements:
+        page: \d*

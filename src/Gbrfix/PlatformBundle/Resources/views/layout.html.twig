@@ -1,0 +1,19 @@
+{% extends "::layout.html.twig" %}
+
+{% block title %}
+	Annonces - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+	{# Sous-titre commun à toutes les pages du bundle #}
+	<h1>Annonces</h1>
+	
+	<p>{{ 'Today'|trans({'%date%': 'now'|localizeddate('full', 'none'), '%time%': 'now'|localizeddate('none', 'short') }) }}</p>
+	
+	<hr>
+	
+	{# Bloc à remplir par les vues du bundle #}
+	{% block platform_body %}
+	{% endblock %}
+	
+{% endblock %}

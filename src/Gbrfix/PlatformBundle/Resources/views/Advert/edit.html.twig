@@ -1,0 +1,20 @@
+{% extends "GbrfixPlatformBundle::layout.html.twig" %}
+
+{% block title %}{{ 'Edit'|trans }} - {{ parent() }}{% endblock %}
+
+{% block platform_body %}
+
+	<h2>{{ 'advert.edit.title'|trans }}</h2>
+	
+	{{ include("GbrfixPlatformBundle:Advert:form.html.twig") }}
+	
+	<p>{{ 'advert.edit.warning'|trans }}</p>
+	
+	<p>
+		<a href="{{ path('gbrfix_platform_view', {'advert_id':advert.id}) }}" class="btn btn-default">
+			<i class="glyphicon glyphicon-chevron-left"></i>
+			{{ 'advert.back'|trans }}
+		</a>
+	</p>
+	
+{% endblock %}

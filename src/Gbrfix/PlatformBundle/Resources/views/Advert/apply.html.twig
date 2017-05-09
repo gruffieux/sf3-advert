@@ -1,0 +1,20 @@
+{% extends "GbrfixPlatformBundle::layout.html.twig" %}
+
+{% block title %}{{ 'Postulation'|trans }} - {{ parent() }}{% endblock %}
+
+{% block platform_body %}
+
+	<h2>{{'Postuler à "abc"'|trans }}</h2>
+	
+	{{ include("GbrfixPlatformBundle:Application:form.html.twig") }}
+	
+	<p>{{ 'advert.apply.warning'|trans }}</p>
+	
+	<p>
+		<a href="{{ path('gbrfix_platform_view', {'advert_id':advert.id}) }}" class="btn btn-default">
+			<i class="glyphicon glyphicon-chevron-left"></i>
+			{{ 'advert.back'|trans }}
+		</a>
+	</p>
+	
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "GbrfixPlatformBundle::layout.html.twig" %}
+
+{% block title %}{{ 'Delete'|trans }} - {{ parent() }}{% endblock %}
+
+{% block platform_body %}
+
+	<h2>{{ 'advert.delete.title'|trans }}</h2>
+	
+	<p>{{ 'advert.delete.confirm'|trans({'%title%': advert.title}) }}</p>
+	
+	{# On met l'id de l'annonce dans la route de l'action du formulaire #}
+	<form action="{{ path('gbrfix_platform_delete', {'id':advert.id}) }}" method="post">
+		<a href="{{ path('gbrfix_platform_view', {'advert_id':advert.id}) }}" class="btn btn-default">
+			<i class="glyphicon glyphicon-chevron-left"></i>
+			{{ 'advert.back'|trans }}
+		</a>
+		<input type="submit" value="{% trans %}Delete{% endtrans %}" class="btn btn-danger" />
+		{# Ceci pour générer le champs CSRF #}
+		{{ form_rest(form) }}
+	</form>
+	
+{% endblock %}

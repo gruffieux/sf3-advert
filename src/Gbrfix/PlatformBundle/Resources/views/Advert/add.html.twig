@@ -1,0 +1,13 @@
+{% extends "GbrfixPlatformBundle::layout.html.twig" %}
+
+{% block title %}{{ parent() }} - {{ 'Add'|trans }}{% endblock %}
+
+{% block body %}
+
+	<h2>{{ 'advert.add.title'|trans }}</h2>
+	
+	{{ include("GbrfixPlatformBundle:Advert:form.html.twig") }}
+	
+	<p>{{ 'advert.add.warning'|trans }}</p>
+	
+{% endblock %}

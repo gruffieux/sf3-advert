@@ -1,0 +1,17 @@
+Hello: 'Bonjour %name% !'
+Today: 'Aujourd''hui, nous sommes le %date% et il est %time%.'
+Home: Accueil
+Delete: Supprimer
+Add: Ajout
+Edit: Modifier
+advert.title: 'Liste des annonces'
+advert.total: '{0}Aucune annonce|{1}Il y a 1 annonce|[2,+Inf]Il y a %count% annonces'
+advert.by: 'par %author%'
+advert.date: 'le %date%'
+advert.delete.title: 'Supprimer une annonce'
+advert.delete.confirm: 'Etes-vous certain de vouloir supprimer l''annonce "%title%" ?'
+advert.back: 'Retour à l''annonce'
+advert.add.title: 'Ajouter une annonce'
+advert.add.warning: 'Attention: cette annonce sera ajoutée directement sur la page d''accueil après validation du formulaire.'
+advert.edit.title: 'Modifier une annonce'
+advert.edit.warning: 'Vous éditez une annonce déjà existante. Merci de ne pas en changer l''esprit général.'

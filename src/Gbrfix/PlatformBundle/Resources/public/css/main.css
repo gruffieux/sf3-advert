@@ -1,0 +1,10 @@
+@CHARSET "UTF-8";
+
+body {
+	background-image: url('../img/bkg.jpg');
+	background-repeat: repeat;
+}
+
+.advert-application {
+	padding-left: 80px;
+}

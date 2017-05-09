@@ -1,0 +1,11 @@
+{% extends "GbrfixPlatformBundle::layout.html.twig" %}
+
+{% block title %}{{ 'Favoris'|trans }} - {{ parent() }}{% endblock %}
+
+{% block platform_body %}
+
+	<h2>{{ 'Mes annonces favorites'|trans }}</h2>
+	
+	{{ include('GbrfixPlatformBundle:Advert:listMarker.html.twig', {'listMarkers': listMarkers}) }}
+	
+{% endblock %}

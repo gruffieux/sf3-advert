@@ -1,0 +1,27 @@
+Hello: 'Hello %name% !'
+Today: 'Today we are %date% and it is %time%.'
+Home: Home
+Delete: Delete
+Add: Add
+Edit: Edit
+advert.title: 'List of ads'
+advert.total: '{0}no ad|{1}There is 1 ad|[2,+Inf]There are %count% ads'
+advert.by: 'by %author%'
+advert.date: '%date%'
+advert.delete.title: 'Delete an ad'
+advert.delete.confirm: 'Are you sure you want to delete ad "%title%" ?'
+advert.back: 'Back to ad'
+advert.add.title: 'Add listing'
+advert.add.warning: 'Warning: this ad will be added directly to the homepage after validation of the form.'
+advert.edit.title: 'Edit an ad'
+advert.edit.warning: 'You are editing an existing ad. Thank you for not changing the general spirit.'
+advert.form: 'Ad Form'
+advert.form.date: 'Creation date'
+advert.form.title: 'Position title'
+advert.form.desc: 'Job Description'
+advert.form.author: 'Your full name'
+advert.form.email: 'Contact e-mail'
+advert.form.image: Picture
+advert.form.publish: Publish
+category.title: '{1}Category|{2}Categories'
+category.add: 'Add category'

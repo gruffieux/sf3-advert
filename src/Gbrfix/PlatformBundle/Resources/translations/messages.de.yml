@@ -1,0 +1,27 @@
+Hello: 'Allo %name% !'
+Today: 'Heute sind wir %date% und %time%.'
+Home: Zuhause
+Delete: Löschen
+Add: Hinzufügen
+Edit: Bearbeiten
+advert.title: 'Liste der Anzeigen'
+advert.total: '{0}Kein Anzeige|{1}Es gibt 1 Anzeige|[2,+Inf]Es gibt %count% Anzeigen'
+advert.by: 'von %author%'
+advert.date: '%date%'
+advert.delete.title: 'Anzeige löschen'
+advert.delete.confirm: 'Sind Sie sicher, dass Sie die Anzeige "%title%" zu entfernen ?'
+advert.back: 'Zurück zur Anzeige'
+advert.add.title: 'Anzeige hinzufügen'
+advert.add.warning: 'Achtung: Dieser Beitrag wird direkt auf der Seite der Rezeption nach Formularvalidierung hinzugefügt.'
+advert.edit.title: 'Bearbeiten Ankündigung'
+advert.edit.warning: 'Sie bearbeiten einen vorhandenen Eintrag gefunden. Vielen Dank, dass Sie nicht den allgemeinen Geist zu ändern.'
+advert.form: 'Meldeschein'
+advert.form.date: 'Erstellungsdatum'
+advert.form.title: 'Position Titel'
+advert.form.desc: 'Tätigkeitsbeschreibung'
+advert.form.author: 'Ihr vollständiger Name'
+advert.form.email: 'E-Mail-Kontakt'
+advert.form.image: Bild
+advert.form.publish: Veröffentlichen
+category.title: '{1}Kategorie|{2}Kategorien'
+category.add: 'Kategorie hinzufügen'

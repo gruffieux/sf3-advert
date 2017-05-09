@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>{% block title %}GbrFix Plateforme{% endblock %}</title>
+		
+		{% block scripts_header %}
+			<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+			<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		{% endblock %}
+		
+		{% block stylesheets %}
+			<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		{% endblock %}
+		
+		{% stylesheets filter='cssrewrite, ?scssphp'
+			'bundles/gbrfixplatform/css/*' %}
+			<link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
+		{% endstylesheets %}
+	</head>
+	
+	<body>
+		<div class="container">
+			<div id="header" class="jumbotron">
+				<h1>Ma plate-forme d'annonces</h1>
+				<p>
+					Projet conçu par {{ webmaster }}
+					avec l'aide du bouqin Symfony3 d'OpenClassrooms.
+				</p>
+				<p><a class="btn btn-primary btn-lg" href="https://openclassrooms.com/courses/developpez-votre-site-web-avec-le-framework-symfony" target="_blank">Participer au MOOC</a></p>
+			</div>
+			
+			<div class="row">
+				<div id="menu" class="col-md-3">
+					{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+						<h2>{{ 'Hello'|trans({'%name%': app.user.username}) }}</h3>
+						<ul class="nav nav-pills nav-stacked">
+							<li><a href="{{ path('fos_user_profile_edit') }}">Mon profil</a></li>
+							<li><a href="{{ path('fos_user_change_password') }}">Changer de mot de passe</a></li>
+							<li><a href="{{ path('fos_user_security_logout') }}">Déconnexion</a></li>
+						</ul>
+					{% else %}
+						<h2>Bienvenue !</h3>
+						<ul class="nav nav-pills nav-stacked">
+							<li><a href="{{ path('fos_user_security_login') }}">Connexion</a></li>
+							<li><a href="{{ path('fos_user_registration_register') }}">Inscription</a></li>
+							<li><a href="{{ path('fos_user_resetting_request') }}">J'ai oublié mon mot de passe</a></li>
+						</ul>
+					{% endif %}
+					<h3>Les annonces</h3>
+					<ul class="nav nav-pills nav-stacked">
+						<li><a href="{{ path('gbrfix_platform_home') }}">Accueil</a></li>
+						{% if is_granted('ROLE_AUTEUR') %}
+							<li><a href="{{ path('gbrfix_platform_add') }}">Ajouter une annonce</a></li>
+						{% endif %}
+						<li><a href="{{ path('gbrfix_platform_markers') }}">Mes favoris</a></li>
+						<li><a href="{{ path('gbrfix_platform_applications') }}">Mes postulations</a></li>
+					</ul>
+					
+					<h4>Dernières annonces</h4>
+					{{ render(controller("GbrfixPlatformBundle:Advert:menu", {'limit':3})) }}
+				</div>
+				<div id="content" class="col-md-9">
+					{% block body %}
+					{% endblock %}
+				</div>
+			</div>
+			
+			<hr>
+			
+			<footer>
+				<p><a href="//github.com/gruffieux" target="_blank">{{ webmaster }}</a> © {{ 'now'|date('Y') }}</p>
+			</footer>
+		</div>
+		
+		{% block scripts_footer %}
+		{% endblock %}
+		
+	</body>
+</html>

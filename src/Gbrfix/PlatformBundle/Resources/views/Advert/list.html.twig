@@ -1,0 +1,25 @@
+{# Cette vue n'hérite de personne. Elle est en électron libre. #}
+
+<p>{{ 'advert.total'|transchoice(listAdverts.count) }}</p>
+	
+{% if nbPages > 0 %}
+	<ul>
+		{% for advert in listAdverts %}
+			<li>
+				{% if advert.image is not null %}<img src="{{ asset(advert.image.webPath) }}" height="28" alt="{{ advert.image.alt }}" />{% endif %}
+				<a href="{{ path('gbrfix_platform_view', {'advert_id':advert.id}) }}">{{ advert.title }}</a>
+				{% trans with {'%author%': advert.author} %}advert.by{% endtrans %},
+				{% trans with {'%date%': advert.date|localizeddate('full', 'none')} %}advert.date{% endtrans %}
+			</li>
+		{% endfor %}
+	</ul>
+	
+	<ul class="pagination">
+		{# On utilise la fonction range(a,b) qui créé un tableau de valeurs entre a et b #}
+		{% for p in range(1, nbPages) %}
+			<li {% if p==page %} class="active"{% endif %}>
+				<a href="{{ path('gbrfix_platform_home', {'page':p}) }}">{{ p }}</a>
+			</li>
+		{% endfor %}
+	</ul>
+{% endif %}
