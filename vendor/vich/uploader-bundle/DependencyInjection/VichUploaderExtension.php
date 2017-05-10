@@ -6,10 +6,9 @@ use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Alias;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\DefinitionDecorator;
-use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
+use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
-use Symfony\Component\HttpKernel\Kernel;
 
 /**
  * VichUploaderExtension.
@@ -19,13 +18,13 @@ use Symfony\Component\HttpKernel\Kernel;
 class VichUploaderExtension extends Extension
 {
     /**
-     * @var array $tagMap
+     * @var array
      */
-    protected $tagMap = array(
-        'orm'       => 'doctrine.event_subscriber',
-        'mongodb'   => 'doctrine_mongodb.odm.event_subscriber',
-        'phpcr'     => 'doctrine_phpcr.event_subscriber'
-    );
+    protected $tagMap = [
+        'orm' => 'doctrine.event_subscriber',
+        'mongodb' => 'doctrine_mongodb.odm.event_subscriber',
+        'phpcr' => 'doctrine_phpcr.event_subscriber',
+    ];
 
     /**
      * Loads the extension.
@@ -48,7 +47,7 @@ class VichUploaderExtension extends Extension
         if (strpos($config['storage'], '@') === 0) {
             $container->setAlias('vich_uploader.storage', substr($config['storage'], 1));
         } else {
-            $container->setAlias('vich_uploader.storage', 'vich_uploader.storage.' . $config['storage']);
+            $container->setAlias('vich_uploader.storage', 'vich_uploader.storage.'.$config['storage']);
         }
 
         $this->loadServicesFiles($container, $config);
@@ -62,17 +61,17 @@ class VichUploaderExtension extends Extension
     {
         $loader = new XmlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
 
-        $toLoad = array(
+        $toLoad = [
             'adapter.xml', 'listener.xml', 'storage.xml', 'injector.xml',
             'templating.xml', 'mapping.xml', 'factory.xml', 'namer.xml',
-            'form.xml', 'handler.xml'
-        );
+            'form.xml', 'handler.xml',
+        ];
         foreach ($toLoad as $file) {
             $loader->load($file);
         }
 
-        if (in_array($config['storage'], array('gaufrette', 'flysystem'))) {
-            $loader->load($config['storage'] . '.xml');
+        if (in_array($config['storage'], ['gaufrette', 'flysystem'])) {
+            $loader->load($config['storage'].'.xml');
         }
 
         if ($config['twig']) {
@@ -85,7 +84,7 @@ class VichUploaderExtension extends Extension
         $bundles = $container->getParameter('kernel.bundles');
 
         // directories
-        $directories = array();
+        $directories = [];
         if ($config['metadata']['auto_detection']) {
             foreach ($bundles as $class) {
                 $ref = new \ReflectionClass($class);
@@ -133,7 +132,7 @@ class VichUploaderExtension extends Extension
             ;
 
             $dir = $container->getParameterBag()->resolveValue($config['metadata']['file_cache']['dir']);
-            if (!file_exists($dir) && !$rs = @mkdir($dir, 0777, true)) {
+            if (!file_exists($dir) && !@mkdir($dir, 0777, true)) {
                 throw new \RuntimeException(sprintf('Could not create cache directory "%s".', $dir));
             }
         } else {
@@ -153,11 +152,11 @@ class VichUploaderExtension extends Extension
 
     protected function registerListeners(ContainerBuilder $container, array $config)
     {
-        $servicesMap = array(
-            'inject_on_load'    => array('name' => 'inject', 'priority' => 0),
-            'delete_on_update'  => array('name' => 'clean', 'priority' => 50),
-            'delete_on_remove'  => array('name' => 'remove', 'priority' => 0)
-        );
+        $servicesMap = [
+            'inject_on_load' => ['name' => 'inject', 'priority' => 0],
+            'delete_on_update' => ['name' => 'clean', 'priority' => 50],
+            'delete_on_remove' => ['name' => 'remove', 'priority' => 0],
+        ];
 
         foreach ($config['mappings'] as $name => $mapping) {
             $driver = $mapping['db_driver'];
@@ -189,8 +188,8 @@ class VichUploaderExtension extends Extension
 
     protected function createNamerService(ContainerBuilder $container, $mappingName, array $mapping)
     {
-        $serviceId  = sprintf('%s.%s', $mapping['namer']['service'], $mappingName);
-        $definition = $container->setDefinition(
+        $serviceId = sprintf('%s.%s', $mapping['namer']['service'], $mappingName);
+        $container->setDefinition(
             $serviceId, new DefinitionDecorator($mapping['namer']['service'])
         );
 
@@ -208,7 +207,7 @@ class VichUploaderExtension extends Extension
 
         // propel does not require tags to work
         if (isset($this->tagMap[$driver])) {
-            $definition->addTag($this->tagMap[$driver], array('priority' => $priority));
+            $definition->addTag($this->tagMap[$driver], ['priority' => $priority]);
         }
     }
 }

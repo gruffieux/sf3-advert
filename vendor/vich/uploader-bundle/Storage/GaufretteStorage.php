@@ -2,6 +2,7 @@
 
 namespace Vich\UploaderBundle\Storage;
 
+use Gaufrette\Filesystem;
 use Gaufrette\Adapter\MetadataSupporter;
 use Gaufrette\Exception\FileNotFound;
 use Knp\Bundle\GaufretteBundle\FilesystemMap;
@@ -29,20 +30,20 @@ class GaufretteStorage extends AbstractStorage
     /**
      * Constructs a new instance of FileSystemStorage.
      *
-     * @param \Vich\UploaderBundle\Mapping\PropertyMappingFactory $factory       The factory.
-     * @param \Knp\Bundle\GaufretteBundle\FilesystemMap           $filesystemMap Gaufrete filesystem factory.
-     * @param string                                              $protocol      Gaufrette stream wrapper protocol.
+     * @param PropertyMappingFactory $factory       The factory
+     * @param FilesystemMap          $filesystemMap Gaufrete filesystem factory
+     * @param string                 $protocol      Gaufrette stream wrapper protocol
      */
     public function __construct(PropertyMappingFactory $factory, FilesystemMap $filesystemMap, $protocol = 'gaufrette')
     {
         parent::__construct($factory);
 
         $this->filesystemMap = $filesystemMap;
-        $this->protocol      = $protocol;
+        $this->protocol = $protocol;
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected function doUpload(PropertyMapping $mapping, UploadedFile $file, $dir, $name)
     {
@@ -50,14 +51,14 @@ class GaufretteStorage extends AbstractStorage
         $path = !empty($dir) ? $dir.'/'.$name : $name;
 
         if ($filesystem->getAdapter() instanceof MetadataSupporter) {
-            $filesystem->getAdapter()->setMetadata($path, array('contentType' => $file->getMimeType()));
+            $filesystem->getAdapter()->setMetadata($path, ['contentType' => $file->getMimeType()]);
         }
 
         $filesystem->write($path, file_get_contents($file->getPathname()), true);
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected function doRemove(PropertyMapping $mapping, $dir, $name)
     {
@@ -72,7 +73,7 @@ class GaufretteStorage extends AbstractStorage
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     protected function doResolvePath(PropertyMapping $mapping, $dir, $name, $relative = false)
     {
@@ -86,11 +87,11 @@ class GaufretteStorage extends AbstractStorage
     }
 
     /**
-     * Get filesystem adapter from the property mapping
+     * Get filesystem adapter from the property mapping.
      *
      * @param PropertyMapping $mapping
      *
-     * @return \Gaufrette\Filesystem
+     * @return Filesystem
      */
     protected function getFilesystem(PropertyMapping $mapping)
     {

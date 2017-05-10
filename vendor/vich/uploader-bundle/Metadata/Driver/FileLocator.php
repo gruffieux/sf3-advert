@@ -45,7 +45,7 @@ class FileLocator implements AdvancedFileLocatorInterface
             return $file->getPathname();
         }
 
-        return null;
+        return;
     }
 
     /**
@@ -58,7 +58,7 @@ class FileLocator implements AdvancedFileLocatorInterface
     public function findAllClasses($extension)
     {
         if (empty($this->dirs)) {
-            return array();
+            return [];
         }
 
         $files = Finder::create()

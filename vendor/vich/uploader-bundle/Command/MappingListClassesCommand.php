@@ -3,7 +3,6 @@
 namespace Vich\UploaderBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
-use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
@@ -21,7 +20,7 @@ class MappingListClassesCommand extends ContainerAwareCommand
     {
         $output->writeln('Looking for uploadable classes.');
 
-        $metadataReader    = $this->getContainer()->get('vich_uploader.metadata_reader');
+        $metadataReader = $this->getContainer()->get('vich_uploader.metadata_reader');
         $uploadableClasses = $metadataReader->getUploadableClasses();
 
         foreach ($uploadableClasses as $class) {

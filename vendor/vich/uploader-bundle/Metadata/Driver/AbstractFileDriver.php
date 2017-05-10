@@ -26,14 +26,14 @@ abstract class AbstractFileDriver implements AdvancedDriverInterface
     public function loadMetadataForClass(\ReflectionClass $class)
     {
         if (null === $path = $this->locator->findFileForClass($class, $this->getExtension())) {
-            return null;
+            return;
         }
 
         return $this->loadMetadataFromFile($path, $class);
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getAllClassNames()
     {
@@ -41,7 +41,7 @@ abstract class AbstractFileDriver implements AdvancedDriverInterface
             throw new \RuntimeException('Locator "%s" must be an instance of "AdvancedFileLocatorInterface".');
         }
 
-        $classNames = array();
+        $classNames = [];
         foreach ($this->locator->findAllClasses($this->getExtension()) as $file) {
             $classNames[] = $this->getClassNameFromFile($file->getRealpath());
         }

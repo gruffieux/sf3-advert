@@ -9,7 +9,6 @@ return array(
     'Twig_Extensions_' => array($vendorDir . '/twig/extensions/lib'),
     'Twig_' => array($vendorDir . '/twig/twig/lib'),
     'SensioLabs\\Security' => array($vendorDir . '/sensiolabs/security-checker'),
-    'ProxyManager\\' => array($vendorDir . '/ocramius/proxy-manager/src'),
     'Metadata\\' => array($vendorDir . '/jms/metadata/src'),
     'JSqueeze' => array($vendorDir . '/patchwork/jsqueeze/class'),
     'Gedmo\\' => array($vendorDir . '/gedmo/doctrine-extensions/lib'),
@@ -19,7 +18,6 @@ return array(
     'Doctrine\\Common\\Inflector\\' => array($vendorDir . '/doctrine/inflector/lib'),
     'Doctrine\\Common\\DataFixtures' => array($vendorDir . '/doctrine/data-fixtures/lib'),
     'Doctrine\\Common\\Collections\\' => array($vendorDir . '/doctrine/collections/lib'),
-    'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib'),
     'Behat\\Transliterator' => array($vendorDir . '/behat/transliterator/src'),
     'Assetic' => array($vendorDir . '/kriswallsmith/assetic/src'),
 );

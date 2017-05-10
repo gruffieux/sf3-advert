@@ -3,12 +3,13 @@
 namespace Vich\UploaderBundle\Metadata\Driver;
 
 use Metadata\Driver\AdvancedDriverInterface;
+use Metadata\Driver\DriverInterface;
 
 class ChainDriver implements AdvancedDriverInterface
 {
     protected $drivers;
 
-    public function __construct(array $drivers = array())
+    public function __construct(array $drivers = [])
     {
         $this->drivers = $drivers;
     }
@@ -26,15 +27,15 @@ class ChainDriver implements AdvancedDriverInterface
             }
         }
 
-        return null;
+        return;
     }
 
     /**
-     * {@inheritDoc}
+     * {@inheritdoc}
      */
     public function getAllClassNames()
     {
-        $classes = array();
+        $classes = [];
         foreach ($this->drivers as $driver) {
             if (!$driver instanceof AdvancedDriverInterface) {
                 continue;

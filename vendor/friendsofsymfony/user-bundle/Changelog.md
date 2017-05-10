@@ -1,10 +1,28 @@
 Changelog
 =========
 
-### 2.0.0-beta2 (xxxx-xx-xx)
+### 2.0.0 (2017-03-29)
 
-* Use ceil in `ResettingController` for a better token lifetime approximation
-* Removed unused translation keys
+* Removed default `fos_user.from_email` configuration values.
+* Removed usage of internal Twig APIs when rendering emails.
+* Add a timeout for the reset retry request.
+* Add Esperanto translations.
+* Fixed incorrect confirmation url.
+* Commented outdated entries in several translation files.
+* [BC break] Use `UserManager::getRepository()` instead of `UserManager::$repository`.
+* [BC break] Use `UserManager::getClass()` instead of `UserManager::$class`.
+
+### 2.0.0-beta2 (2017-01-31)
+
+* Use ceil in `ResettingController` for a better token lifetime approximation.
+* Removed unused translation keys.
+* Removed form deprecations.
+* Use `@`-based Twig syntax for templates.
+* Improved several language files.
+* Improved documentation.
+* Ability to disable the authentication listener.
+* Removed `DateUtil` class.
+* [BC break] Changed validation max length to match the database structure.
 
 ### 2.0.0-beta1 (2016-11-29)
 
@@ -23,7 +41,7 @@ Changelog
 * [BC break] Removed `UserManager::refreshUser`.
 * [BC break] Removed `UserManager::loadUserByUsername`.
 * [BC break] Removed `UserManager::supportsClass`.
-* [BC break] Removed unused properties `expired` and `credentialsExpired` including corresponding methods.
+* [BC break] Removed `FOS\UserBundle\Model\User` properties `$locked`, `$expired`, `$expiredAt`, `$credentialsExpired`, `$credentialsExpiredAt` and associated setter and getter ([see here](https://github.com/FriendsOfSymfony/FOSUserBundle/blob/master/Upgrade.md#200-alpha3-to-200-beta1)).
 * [BC break] The signature of the `Initializer` constructor has changed.
 * [BC break] The signature of the `LoginManager` constructor has changed.
 * [BC break] The signature of the `UserListener` constructor has changed.

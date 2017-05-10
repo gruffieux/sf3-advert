@@ -3,7 +3,6 @@
 namespace Vich\UploaderBundle\Event;
 
 use Symfony\Component\EventDispatcher\Event as BaseEvent;
-
 use Vich\UploaderBundle\Mapping\PropertyMapping;
 
 /**
@@ -35,7 +34,7 @@ class Event extends BaseEvent
     /**
      * Accessor to the mapping used to manipulate the object.
      *
-     * @return \Vich\UploaderBundle\Mapping\PropertyMapping
+     * @return PropertyMapping
      */
     public function getMapping()
     {

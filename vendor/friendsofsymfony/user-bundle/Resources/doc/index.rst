@@ -50,7 +50,7 @@ Require the bundle with composer:
 
 .. code-block:: bash
 
-    $ composer require friendsofsymfony/user-bundle "~2.0@dev"
+    $ composer require friendsofsymfony/user-bundle "~2.0"
 
 Composer will install the bundle to your project's ``vendor/friendsofsymfony/user-bundle`` directory.
 If you encounter installation errors pointing at a lack of configuration parameters, such as ``The child node "db_driver" at path "fos_user" must be configured``, you should complete the configuration in Step 5 first and then re-run this step.
@@ -344,6 +344,9 @@ of datastore you are using.
             db_driver: orm # other valid values are 'mongodb' and 'couchdb'
             firewall_name: main
             user_class: AppBundle\Entity\User
+            from_email:
+                address: "%mailer_user%"
+                sender_name: "%mailer_user%"
 
     .. code-block:: xml
 
@@ -356,11 +359,12 @@ of datastore you are using.
             user-class="AppBundle\Entity\User"
         />
 
-Only three configuration values are required to use the bundle:
+Only four configuration's node are required to use the bundle:
 
 * The type of datastore you are using (``orm``, ``mongodb`` or ``couchdb``).
 * The firewall name which you configured in Step 4.
 * The fully qualified class name (FQCN) of the ``User`` class which you created in Step 3.
+* The default email address to use when the bundle send a registration confirmation to the user.
 
 .. note::
 
