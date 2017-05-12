@@ -5,8 +5,4 @@ parameters:
     database_name: sf3-advert
     database_user: root
     database_password: 1234
-    mailer_transport: smtp
-    mailer_host: smtpauths.bluewin.ch
-    mailer_user: gabriel.ruffieux
-    mailer_password: qweasdyxc8
     secret: ed06a2ecdd3a008d7fc80c4abdf896dbd05bba86
