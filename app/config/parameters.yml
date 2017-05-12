@@ -1,0 +1,8 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 127.0.0.1
+    database_port: null
+    database_name: sf3-advert
+    database_user: root
+    database_password: 1234
+    secret: ed06a2ecdd3a008d7fc80c4abdf896dbd05bba86
