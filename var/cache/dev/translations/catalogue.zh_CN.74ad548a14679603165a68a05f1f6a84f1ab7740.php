@@ -103,6 +103,7 @@ $catalogue = new MessageCatalogue('zh_CN', array (
     'fos_user.group.blank' => '请输入小组名称',
     'fos_user.group.short' => '小组名称字数不够',
     'fos_user.group.long' => '小组名称字数超出限制',
+    'fos_group.name.already_used' => '此名称已在使用',
   ),
   'security' => 
   array (
@@ -154,7 +155,6 @@ $catalogue = new MessageCatalogue('zh_CN', array (
 祝好
 网站团队
 ',
-    'resetting.check_email' => '系统向%email%发送了一封包含密码重置链接的邮件，请查收。',
     'resetting.request.username' => '用户名或邮箱',
     'resetting.request.submit' => '重置密码',
     'resetting.reset.submit' => '修改密码',
@@ -373,8 +373,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -390,7 +393,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

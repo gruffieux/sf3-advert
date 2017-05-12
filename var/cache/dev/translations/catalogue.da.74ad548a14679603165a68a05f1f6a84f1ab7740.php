@@ -123,8 +123,10 @@ $catalogue = new MessageCatalogue('da', array (
     'profile.flash.updated' => 'Profilen er blevet opdateret.',
     'change_password.submit' => 'Skift adgangskode',
     'change_password.flash.success' => 'Adgangskoden er blevet opdateret.',
-    'registration.check_email' => 'En e-mail er blevet sendt til %email%. Den indeholder et aktiveringslink, du skal følge for at aktivere din konto.',
+    'registration.check_email' => 'En e-mail er blevet sendt til %email%. Den indeholder et aktiveringslink, du skal følge for at aktivere din konto.
+',
     'registration.confirmed' => 'Tillykke %username%, din konto er nu aktiveret',
+    'registration.back' => 'Tilbage til foregående side.',
     'registration.submit' => 'Registrer',
     'registration.flash.user_created' => 'Bruger er blevet oprettet.',
     'registration.email.subject' => 'Velkommen %username%!',
@@ -132,10 +134,16 @@ $catalogue = new MessageCatalogue('da', array (
 
 For at færdiggøre aktiveringen af din konto, besøg venligst %confirmationUrl%
 
+Dette link kan kun bruges én gang til at validere din konto.
+
 Venlig hilsen,
 Holdet bag siden.
 ',
-    'resetting.check_email' => 'En e-mail er blevet sendt til %email%. Den indeholder et link, du skal følge for at nulstille din adgangskode.',
+    'resetting.check_email' => 'En e-mail er blevet sendt til %email%. Den indeholder et link, du skal følge for at nulstille din adgangskode.
+Note: Du kan først bede om en ny adgangskode om %tokenLifetime% timer.
+
+Hvis ikke du modtager en enmail skal du tjekke dit spamfilter eller prøve igen.
+',
     'resetting.request.username' => 'Brugernavn eller e-mailadresse',
     'resetting.request.submit' => 'Nulstil adgangskode',
     'resetting.reset.submit' => 'Skift adgangskode',
@@ -351,8 +359,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -368,7 +379,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

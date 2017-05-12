@@ -103,6 +103,7 @@ $catalogue = new MessageCatalogue('ar', array (
     'fos_user.group.blank' => 'يرجى تعيين إسم المجموعة',
     'fos_user.group.short' => ' إسم المجموعة قصير جدا',
     'fos_user.group.long' => ' إسم المجموعة طويل جدا',
+    'fos_group.name.already_used' => 'هذا الإسم غير متاح.',
   ),
   'security' => 
   array (
@@ -152,10 +153,16 @@ $catalogue = new MessageCatalogue('ar', array (
 
  لتفعيل حسابك يرجى إتباع الرابط التالي %confirmationUrl%
 
+ الرابط يمكن إستخدامه مرة واحدة فقط لتفعيل حسابك
+
 شكرا،
 فريق العمل.
 ',
-    'resetting.check_email' => 'لقد تم إرسال رسالة إلكترونية إلى %email%  يحتوي على رابط يجب إتباعه لإعادة تعيين كلمة المرور الخاصة بك.',
+    'resetting.check_email' => 'لقد تم إرسال رسالة إلكترونية تحتوي على رابط يجب الضغط عليه لإعادة ضبط كلمة المرور الخاصة بك.
+ملحوظة: يمكنك إعادة ضبط كلمة المرور الخاصة بك خلال %tokenLifetime% ساعة
+
+يرجى التحقق من ملف السبام إذا لم تستقبل الرسالة الإلكترونية قريبا أو أعد المحاولة
+',
     'resetting.request.username' => 'إسم المستخدم او البريد الالكتروني',
     'resetting.request.submit' => 'إعادة ضبط كلمة المرور',
     'resetting.reset.submit' => 'تغيير كلمة المرور',
@@ -376,8 +383,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -393,7 +403,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

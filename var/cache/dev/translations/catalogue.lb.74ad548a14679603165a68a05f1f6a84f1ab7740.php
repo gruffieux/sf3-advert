@@ -136,12 +136,10 @@ Fir Däi Benotzerkonto ze bestätegen, besich wann ech gelift d\'Säit %confirma
 Mat beschte Gréiss,
 d\'Equipe.
 ',
-    'resetting.check_email' => 'Eng E-Mail gouf un %email% geschéckt. Se enthält e Link, deen s Du uklicke muss, fir Däi Passwort zeréckzesetzen.',
     'resetting.request.username' => 'Benotzernumm',
     'resetting.request.submit' => 'Passwuert zerécksetzen',
     'resetting.reset.submit' => 'Passwuert ännern',
     'resetting.flash.success' => 'D\'Passwuert gouf erfollegräich zeréckgesat.',
-    'resetting.email.subject' => 'Wëllkomm %username%!',
     'resetting.email.message' => 'Hallo %username%!
 
 Fir Däi Passwuert zeréckzesetzen, besich wann ech gelift d\'Säit %confirmationUrl%
@@ -352,8 +350,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -369,7 +370,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

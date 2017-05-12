@@ -52,7 +52,7 @@ $catalogue = new MessageCatalogue('de', array (
     'This value should have exactly {{ limit }} character.|This value should have exactly {{ limit }} characters.' => 'Dieser Wert sollte genau {{ limit }} Zeichen lang sein.|Dieser Wert sollte genau {{ limit }} Zeichen lang sein.',
     'The file was only partially uploaded.' => 'Die Datei wurde nur teilweise hochgeladen.',
     'No file was uploaded.' => 'Es wurde keine Datei hochgeladen.',
-    'No temporary folder was configured in php.ini.' => 'Es wurde kein temporärer Ordner in der php.ini konfiguriert.',
+    'No temporary folder was configured in php.ini.' => 'Es wurde kein temporärer Ordner in der php.ini konfiguriert oder der temporäre Ordner existiert nicht.',
     'Cannot write temporary file to disk.' => 'Kann die temporäre Datei nicht speichern.',
     'A PHP extension caused the upload to fail.' => 'Eine PHP-Erweiterung verhinderte den Upload.',
     'This collection should contain {{ limit }} element or more.|This collection should contain {{ limit }} elements or more.' => 'Diese Sammlung sollte {{ limit }} oder mehr Elemente beinhalten.|Diese Sammlung sollte {{ limit }} oder mehr Elemente beinhalten.',
@@ -418,8 +418,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -435,7 +438,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

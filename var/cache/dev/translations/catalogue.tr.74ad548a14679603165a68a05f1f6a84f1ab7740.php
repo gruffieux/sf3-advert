@@ -78,6 +78,7 @@ $catalogue = new MessageCatalogue('tr', array (
     'fos_user.group.blank' => 'Lütfen bir isim girin.',
     'fos_user.group.short' => 'İsim çok kısa.',
     'fos_user.group.long' => 'İsim çok uzun.',
+    'fos_group.name.already_used' => 'İsim zaten kullanılıyor..',
   ),
   'security' => 
   array (
@@ -116,7 +117,7 @@ $catalogue = new MessageCatalogue('tr', array (
     'profile.flash.updated' => 'Profil Güncellendi.',
     'change_password.submit' => 'Parolayı Değiştir',
     'change_password.flash.success' => 'Parola değiştirildi.',
-    'registration.check_email' => '%email% adresine hesabınızı aktive etmek için kullanacağınız aktivasyon linkini barındıran bir e-posta gönderildi.',
+    'registration.check_email' => 'E-posta adresinize hesabınızı aktive etmek için kullanacağınız aktivasyon linkini barındıran bir e-posta gönderildi.',
     'registration.confirmed' => 'Tebrikler %username%. Hesabınız şu anda aktifleştirildi.',
     'registration.back' => 'Asıl sayfaya geri dön.',
     'registration.submit' => 'Kayıt ol',
@@ -130,9 +131,13 @@ adresini ziyaret ediniz.
 Teşekkürler,
 Web Takımı.
 ',
-    'resetting.check_email' => '%email% adresine parolanızı sıfırlama adresi bulunan bir e-posta gönderildi.',
+    'resetting.check_email' => 'E-posta adresinize parolanızı sıfırlama adresi bulunan bir e-posta gönderildi.
+Not: Yeni şifre talep etmek için %tokenLifetime% saat beklemelisiniz.
+
+E-posta gelmedi ise spam klasörünü kontrol edin veya tekrar deneyin.
+',
     'resetting.request.username' => 'Kullanıcı adı ya da e-posta adresi',
-    'resetting.request.submit' => 'Parolayı Sıfırla',
+    'resetting.request.submit' => 'Parolayı sıfırla',
     'resetting.reset.submit' => 'Parolayı değiştir',
     'resetting.flash.success' => 'Parola başarıyla değiştirildi.',
     'resetting.email.subject' => 'Parola Yenileme',
@@ -352,8 +357,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -369,7 +377,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

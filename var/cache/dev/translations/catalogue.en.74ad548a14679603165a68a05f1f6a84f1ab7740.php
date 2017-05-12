@@ -52,7 +52,7 @@ $catalogue = new MessageCatalogue('en', array (
     'This value should have exactly {{ limit }} character.|This value should have exactly {{ limit }} characters.' => 'This value should have exactly {{ limit }} character.|This value should have exactly {{ limit }} characters.',
     'The file was only partially uploaded.' => 'The file was only partially uploaded.',
     'No file was uploaded.' => 'No file was uploaded.',
-    'No temporary folder was configured in php.ini.' => 'No temporary folder was configured in php.ini.',
+    'No temporary folder was configured in php.ini.' => 'No temporary folder was configured in php.ini, or the configured folder does not exist.',
     'Cannot write temporary file to disk.' => 'Cannot write temporary file to disk.',
     'A PHP extension caused the upload to fail.' => 'A PHP extension caused the upload to fail.',
     'This collection should contain {{ limit }} element or more.|This collection should contain {{ limit }} elements or more.' => 'This collection should contain {{ limit }} element or more.|This collection should contain {{ limit }} elements or more.',
@@ -180,7 +180,8 @@ $catalogue = new MessageCatalogue('en', array (
     'profile.flash.updated' => 'The profile has been updated.',
     'change_password.submit' => 'Change password',
     'change_password.flash.success' => 'The password has been changed.',
-    'registration.check_email' => 'An email has been sent to %email%. It contains an activation link you must click to activate your account.',
+    'registration.check_email' => 'An email has been sent to %email%. It contains an activation link you must click to activate your account.
+',
     'registration.confirmed' => 'Congrats %username%, your account is now activated.',
     'registration.back' => 'Back to the originating page.',
     'registration.submit' => 'Register',
@@ -190,11 +191,13 @@ $catalogue = new MessageCatalogue('en', array (
 
 To finish activating your account - please visit %confirmationUrl%
 
+This link can only be used once to validate your account.
+
 Regards,
 the Team.
 ',
     'resetting.check_email' => 'An email has been sent. It contains a link you must click to reset your password.
-Note: You can only request a new password within %tokenLifetime% hours.
+Note: You can only request a new password once within %tokenLifetime% hours.
 
 If you don\'t get an email check your spam folder or try again.
 ',
@@ -418,8 +421,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -435,7 +441,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

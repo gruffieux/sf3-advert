@@ -77,24 +77,25 @@ $catalogue = new MessageCatalogue('ro', array (
     'This form should not contain extra fields.' => 'Aceast formular nu ar trebui să conțină câmpuri suplimentare.',
     'The uploaded file was too large. Please try to upload a smaller file.' => 'Fișierul încărcat a fost prea mare. Vă rugăm sa încărcați un fișier mai mic.',
     'The CSRF token is invalid. Please try to resubmit the form.' => 'Token-ul CSRF este invalid. Vă rugăm să trimiteți formularul incă o dată.',
-    'fos_user.username.already_used' => 'Numele de utilizator este deja folosit',
-    'fos_user.username.blank' => 'Introduceți un nume de utilizator',
-    'fos_user.username.short' => 'Numele de utilizator este prea scurt',
-    'fos_user.username.long' => 'Numele de utilizator este prea lung',
-    'fos_user.email.already_used' => 'E-mailul este deja folosit',
-    'fos_user.email.blank' => 'Introduceți e-mailul',
-    'fos_user.email.short' => 'E-mailul este prea scurt',
-    'fos_user.email.long' => 'E-mailul este prea lung',
-    'fos_user.email.invalid' => 'E-mailul nu este corect',
-    'fos_user.password.blank' => 'Introduceți parola',
-    'fos_user.password.short' => 'Parola este prea scurtă',
-    'fos_user.password.mismatch' => 'Parolele introduse nu coincid',
-    'fos_user.new_password.blank' => 'Introduceți o parolă nouă',
-    'fos_user.new_password.short' => 'Parola nouă este prea scurtă',
-    'fos_user.current_password.invalid' => 'Parola introdusă nu este corectă',
-    'fos_user.group.blank' => 'Introduceți un nume',
-    'fos_user.group.short' => 'Numele este prea scurt',
-    'fos_user.group.long' => 'Numele este prea lung',
+    'fos_user.username.already_used' => 'Numele de utilizator este deja folosit.',
+    'fos_user.username.blank' => 'Introduceți un nume de utilizator.',
+    'fos_user.username.short' => 'Numele de utilizator este prea scurt.',
+    'fos_user.username.long' => 'Numele de utilizator este prea lung.',
+    'fos_user.email.already_used' => 'E-mailul este deja folosit.',
+    'fos_user.email.blank' => 'Introduceți e-mailul.',
+    'fos_user.email.short' => 'E-mailul este prea scurt.',
+    'fos_user.email.long' => 'E-mailul este prea lung.',
+    'fos_user.email.invalid' => 'E-mailul nu este corect.',
+    'fos_user.password.blank' => 'Introduceți parola.',
+    'fos_user.password.short' => 'Parola este prea scurtă.',
+    'fos_user.password.mismatch' => 'Parolele introduse nu coincid.',
+    'fos_user.new_password.blank' => 'Introduceți o parolă nouă.',
+    'fos_user.new_password.short' => 'Parola nouă este prea scurtă.',
+    'fos_user.current_password.invalid' => 'Parola introdusă nu este corectă.',
+    'fos_user.group.blank' => 'Introduceți un nume.',
+    'fos_user.group.short' => 'Numele este prea scurt.',
+    'fos_user.group.long' => 'Numele este prea lung.',
+    'fos_group.name.already_used' => 'Numele este deja folosit.',
   ),
   'security' => 
   array (
@@ -133,20 +134,27 @@ $catalogue = new MessageCatalogue('ro', array (
     'profile.flash.updated' => 'Profilul a fost actualizat.',
     'change_password.submit' => 'Schimbă parola',
     'change_password.flash.success' => 'Parola a fost schimbată.',
-    'registration.check_email' => 'Un email a fost trimis către %email%. Conține un link de activare pe care trebuie să îl accesezi pentru a-ți activa contul.',
-    'registration.confirmed' => 'Felicitări %username%, contul tău a fost confirmat.',
+    'registration.check_email' => 'Un email a fost trimis către %email%. Conține un link de activare pe care trebuie să îl accesezi pentru a-ți activa contul.
+',
+    'registration.confirmed' => 'Felicitări %username%, contul tău a fost activat.',
     'registration.back' => 'Înapoi la pagina de la care ai venit.',
     'registration.submit' => 'Înregistrează-te',
     'registration.flash.user_created' => 'Utilizatorul a fost creat cu succes.',
     'registration.email.subject' => 'Bine ai venit %username%!',
     'registration.email.message' => 'Salut %username%!
 
-Pentru a-ți valida contul - accesează %confirmationUrl%
+Pentru a-ți activa contul - accesează %confirmationUrl%
+
+Acest link poate fi folosit numai o singură dată pentru a activa contul.
 
 Toate cele bune,
 Echipa
 ',
-    'resetting.check_email' => 'A fost trimis un email către %email%. Conține un link pe care trebuie să îl accesezi pentru a-ți reseta parola.',
+    'resetting.check_email' => 'Un email a fost trimis. Conține un link pe care trebuie să îl accesezi pentru a-ți reseta parola.
+Notă: Poți cere o nouă parolă numai în următoarele %tokenLifetime% ore.
+
+Daca nu primești email-ul verifica in spam sau mai incearca o dată.
+',
     'resetting.request.username' => 'Numele de utilizator sau adresa de email',
     'resetting.request.submit' => 'Resetează parola',
     'resetting.reset.submit' => 'Schimbă parola',
@@ -159,10 +167,10 @@ Pentru a-ți reseta parola - accesează %confirmationUrl%
 Toate cele bune,
 Echipa
 ',
-    'layout.logout' => 'Logout',
+    'layout.logout' => 'Ieșire',
     'layout.login' => 'Autentificare',
     'layout.register' => 'Înregistrare',
-    'layout.logged_in_as' => 'Logat ca %username%',
+    'layout.logged_in_as' => 'Autentificat ca %username%',
     'form.group_name' => 'Numele grupului',
     'form.username' => 'Nume de utilizator',
     'form.email' => 'Email',
@@ -170,7 +178,7 @@ Echipa
     'form.password' => 'Parolă',
     'form.password_confirmation' => 'Verificare parolă',
     'form.new_password' => 'Parola nouă',
-    'form.new_password_confirmation' => 'Verificare parolă',
+    'form.new_password_confirmation' => 'Verificare parolă nouă',
   ),
 ));
 
@@ -362,8 +370,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -379,7 +390,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

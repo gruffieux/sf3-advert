@@ -99,6 +99,7 @@ $catalogue = new MessageCatalogue('sr_Latn', array (
     'fos_user.group.blank' => 'Molimo unesite naziv.',
     'fos_user.group.short' => 'Naziv je prekratak.',
     'fos_user.group.long' => 'Naziv je predug.',
+    'fos_group.name.already_used' => 'Ovo ime već postoji.',
   ),
   'security' => 
   array (
@@ -146,6 +147,8 @@ $catalogue = new MessageCatalogue('sr_Latn', array (
     'registration.email.message' => 'Zdravo %username%!
 
 Da bi aktivirali Vaš nalog posetite %confirmationUrl%
+
+Ovaj link možete upotrebiti samo jednom da biste potvrdili Vaš nalog.
 
 S poštovanjem,
 tim sajta.
@@ -369,8 +372,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -386,7 +392,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

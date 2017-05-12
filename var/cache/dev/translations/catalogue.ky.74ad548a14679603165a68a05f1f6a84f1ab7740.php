@@ -32,7 +32,6 @@ $catalogue = new MessageCatalogue('ky', array (
  Регистрацияны анныктоо үчүн %confirmationUrl%
 
  шилтемеси кириңиз.',
-    'resetting.check_email' => 'Кат %email% почтасына жөнөтүлдү. Ал жакта шилтеме бар жана ал шилтемеге кирүү менен сиздин сырдык сөзүңүз өзгөрөт.',
     'resetting.request.username' => 'Колдонуучунун аты',
     'resetting.request.submit' => 'Сырдык сөздү өзгөртүү',
     'resetting.reset.submit' => 'Сырдык сөздү өзгөртүү',
@@ -42,7 +41,7 @@ $catalogue = new MessageCatalogue('ky', array (
 
  Сырдык сөздү өзгөртүү үчүн, сураныч боюнча кириңиз
 
-Ийгилик каалоо менен, 
+Ийгилик каалоо менен,
 сайттын командасы.
 ',
     'layout.logout' => 'Чыгуу',
@@ -269,8 +268,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -286,7 +288,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

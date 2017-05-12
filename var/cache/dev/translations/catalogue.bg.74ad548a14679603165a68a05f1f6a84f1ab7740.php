@@ -136,13 +136,14 @@ $catalogue = new MessageCatalogue('bg', array (
     'security.login.remember_me' => 'Запомни ме',
     'security.login.submit' => 'Вход',
     'profile.show.username' => 'Потребителско име',
-    'profile.show.email' => 'E-mail',
-    'profile.edit.submit' => 'Запази',
-    'profile.flash.updated' => 'Профила беше успешно обновен.',
+    'profile.show.email' => 'Имейл',
+    'profile.edit.submit' => 'Промени',
+    'profile.flash.updated' => 'Профилът беше успешно променен.',
     'change_password.submit' => 'Промени паролата',
     'change_password.flash.success' => 'Паролата беше успешно променена.',
-    'registration.check_email' => 'Изпратихме писмо с линк за активация на посочения E-mail адрес: %email%. Ако не откривате писмото проверете и в папка СПАМ.',
-    'registration.confirmed' => 'Честито, %username%, акаунта Ви беше успешно активиран.',
+    'registration.check_email' => 'Изпратихме писмо до %email%. То съдържа линк за активиране, който трябва да отворите, за да се активира профилът Ви.
+',
+    'registration.confirmed' => 'Честито, %username%, акаунтът е успешно активиран.',
     'registration.back' => 'Обратно към предишната страница.',
     'registration.submit' => 'Регистрация',
     'registration.flash.user_created' => 'Потребителят беше успешно създаден.',
@@ -151,11 +152,17 @@ $catalogue = new MessageCatalogue('bg', array (
 
 За да активирате своя профил, моля отворете %confirmationUrl%
 
+Това е еднократен линк за валидиране на акаунта Ви. 
+
 Поздрави,
 от екипа.
 ',
-    'resetting.check_email' => 'Изпратихме писмо с линк за активация на посочения E-mail адрес: %email%. Ако не откривате писмото проверете и в папка СПАМ.',
-    'resetting.request.username' => 'Потребителско име / E-mail',
+    'resetting.check_email' => 'Изпратихме писмо с линк за активация на посочения имейл адрес: %email%.
+Забележка: Заявка за нова парола може да направите в рамките на %tokenLifetime% час(а).
+
+Ако не откривате писмото проверете в папка СПАМ или опитайте отново.
+',
+    'resetting.request.username' => 'Потребителско име или имейл',
     'resetting.request.submit' => 'Промени паролата',
     'resetting.reset.submit' => 'Промени паролата',
     'resetting.flash.success' => 'Паролата беше успешно променена.',
@@ -170,10 +177,10 @@ $catalogue = new MessageCatalogue('bg', array (
     'layout.logout' => 'Изход',
     'layout.login' => 'Вход',
     'layout.register' => 'Регистрация',
-    'layout.logged_in_as' => 'Логнат като %username%',
+    'layout.logged_in_as' => 'Влязъл като %username%',
     'form.group_name' => 'Име на група',
     'form.username' => 'Потребителско име',
-    'form.email' => 'E-mail',
+    'form.email' => 'Имейл',
     'form.current_password' => 'Текуща парола',
     'form.password' => 'Парола',
     'form.password_confirmation' => 'Парола (отново)',
@@ -380,8 +387,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -397,7 +407,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

@@ -101,6 +101,7 @@ $catalogue = new MessageCatalogue('lt', array (
     'fos_user.group.blank' => 'Prašome įvesti pavadinimą.',
     'fos_user.group.short' => 'Pavadinimas per trumpas.',
     'fos_user.group.long' => 'Pavadinimas per trumpas.',
+    'fos_group.name.already_used' => 'Šis pavadinimas jau naudojamas.',
   ),
   'security' => 
   array (
@@ -152,7 +153,6 @@ Norėdami aktyvuoti savo paskyrą, apsilankykite adresu %confirmationUrl%
 Pagarbiai,
 Komanda.
 ',
-    'resetting.check_email' => 'El. pašto pranešimas išsiųstas adresu %email%. Jame rasite nuorodą, kurią paspaudę, galėsite pakeisti savo slaptažodį.',
     'resetting.request.username' => 'Naudotojo vardas arba el. paštas',
     'resetting.request.submit' => 'Tęsti',
     'resetting.reset.submit' => 'Pakeisti slaptažodį',
@@ -368,8 +368,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -385,7 +388,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

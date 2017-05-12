@@ -82,27 +82,29 @@ $catalogue = new MessageCatalogue('id', array (
     'An empty file is not allowed.' => 'Berkas kosong tidak diizinkan.',
     'The host could not be resolved.' => 'Host tidak dapat diselesaikan.',
     'This value does not match the expected {{ charset }} charset.' => 'Nilai ini tidak memenuhi set karakter {{ charset }} yang diharapkan.',
+    'This is not a valid Business Identifier Code (BIC).' => 'Ini bukan Business Identifier Code (BIC) yang sah.',
     'This form should not contain extra fields.' => 'Gabungan kolom tidak boleh mengandung kolom tambahan.',
     'The uploaded file was too large. Please try to upload a smaller file.' => 'Berkas yang di unggah terlalu besar. Silahkan coba unggah berkas yang lebih kecil.',
     'The CSRF token is invalid. Please try to resubmit the form.' => 'CSRF-Token tidak sah. Silahkan coba kirim ulang formulir.',
-    'fos_user.username.already_used' => 'Nama pengguna telah digunakan',
-    'fos_user.username.blank' => 'Masukkan nama pengguna',
-    'fos_user.username.short' => 'Nama pengguna terlalu pendek',
-    'fos_user.username.long' => 'Nama pengguna terlalu panjang',
-    'fos_user.email.already_used' => 'Email telah digunakan',
-    'fos_user.email.blank' => 'Masukkan alamat email anda',
-    'fos_user.email.short' => 'Alamat email terlalu pendek',
-    'fos_user.email.long' => 'Alamat email terlalu panjang',
-    'fos_user.email.invalid' => 'Alamat email salah',
-    'fos_user.password.blank' => 'Masukkan password yang ingin digunakan',
-    'fos_user.password.short' => 'Password terlalu pendek',
-    'fos_user.password.mismatch' => 'Password yang anda masukkan tidak sama',
-    'fos_user.new_password.blank' => 'Masukkan password baru anda',
-    'fos_user.new_password.short' => 'Password baru anda terlalu pendek',
-    'fos_user.current_password.invalid' => 'Password yang anda masukkan salah',
-    'fos_user.group.blank' => 'Masukkan nama',
-    'fos_user.group.short' => 'Nama terlalu pendek',
-    'fos_user.group.long' => 'Nama terlalu panjang',
+    'fos_user.username.already_used' => 'Nama pengguna telah digunakan.',
+    'fos_user.username.blank' => 'Masukkan nama pengguna.',
+    'fos_user.username.short' => 'Nama pengguna terlalu pendek.',
+    'fos_user.username.long' => 'Nama pengguna terlalu panjang.',
+    'fos_user.email.already_used' => 'Surel telah digunakan.',
+    'fos_user.email.blank' => 'Masukkan alamat surel.',
+    'fos_user.email.short' => 'Alamat surel terlalu pendek.',
+    'fos_user.email.long' => 'Alamat surel terlalu panjang.',
+    'fos_user.email.invalid' => 'Alamat surel salah.',
+    'fos_user.password.blank' => 'Masukkan kata sandi.',
+    'fos_user.password.short' => 'Kata sandi terlalu pendek.',
+    'fos_user.password.mismatch' => 'kata sandi yang anda masukkan tidak sama.',
+    'fos_user.new_password.blank' => 'Masukkan kata sandi baru.',
+    'fos_user.new_password.short' => 'Kata sandi baru anda terlalu pendek.',
+    'fos_user.current_password.invalid' => 'Kata sandi yang anda masukkan salah.',
+    'fos_user.group.blank' => 'Masukkan nama.',
+    'fos_user.group.short' => 'Nama terlalu pendek.',
+    'fos_user.group.long' => 'Nama terlalu panjang.',
+    'fos_group.name.already_used' => 'Nama telah digunakan.',
   ),
   'security' => 
   array (
@@ -128,44 +130,47 @@ $catalogue = new MessageCatalogue('id', array (
     'group.edit.submit' => 'Memperbaharui Grup',
     'group.show.name' => 'Nama Grup',
     'group.new.submit' => 'Buat Grup',
-    'group.flash.updated' => 'Grup telah berhasil diperbaharui',
-    'group.flash.created' => 'Grup telah berhasil ditambahkan',
-    'group.flash.deleted' => 'Grup telah berhasil dihapus',
+    'group.flash.updated' => 'Grup telah berhasil diperbaharui.',
+    'group.flash.created' => 'Grup telah berhasil ditambahkan.',
+    'group.flash.deleted' => 'Grup telah berhasil dihapus.',
     'security.login.username' => 'Nama Pengguna',
-    'security.login.password' => 'Password',
-    'security.login.remember_me' => 'Selalu Ingat Saya',
-    'security.login.submit' => 'Login',
+    'security.login.password' => 'Kata sandi',
+    'security.login.remember_me' => 'Ingat saya',
+    'security.login.submit' => 'Masuk',
     'profile.show.username' => 'Nama Pengguna',
-    'profile.show.email' => 'Email',
+    'profile.show.email' => 'Surel',
     'profile.edit.submit' => 'Perbaharui',
     'profile.flash.updated' => 'Profil telah berhasil diperbaharui',
-    'change_password.submit' => 'Ubah Password',
-    'change_password.flash.success' => 'Password telah berhasil diubah',
-    'registration.check_email' => 'Email telah berhasil dikirimkan ke %email%. Anda harus mengklik link aktivasi di dalam email tersebut untuk mengaktifkan account anda.',
+    'change_password.submit' => 'Ubah kata sandi',
+    'change_password.flash.success' => 'Kata sandi telah berhasil diubah.',
+    'registration.check_email' => 'Sebuah surel telah berhasil dikirimkan ke %email%. Anda harus mengklik tautan aktivasi di dalam surel tersebut untuk mengaktifkan akun anda.',
     'registration.confirmed' => 'Selamat %username%, akun anda telah berhasil diaktifkan.',
     'registration.back' => 'Kembali ke halaman sebelumnya.',
-    'registration.submit' => 'Daftarkan',
+    'registration.submit' => 'Daftar',
     'registration.flash.user_created' => 'Pengguna telah berhasil ditambahkan.',
     'registration.email.subject' => 'Selamat datang %username%!',
     'registration.email.message' => 'Hallo %username%!
 
-Untuk menyelesaikan aktifasi akun anda,
-mohon kunjungi halaman berikut:
-%confirmationUrl%
+Untuk menyelesaikan aktifasi akun anda, mohon kunjungi halaman berikut %confirmationUrl%
+
+Tautan ini hanya bisa digunakan sekali untuk akun anda.
 
 Hormat Kami,
 Tim Website.
 ',
-    'resetting.check_email' => 'Email telah dikirim ke %email%. Anda harus mengklik link di dalam email tersebut agar dapat mereset password anda.',
-    'resetting.request.username' => 'Nama Pengguna Atau Alamat Email anda',
-    'resetting.request.submit' => 'Reset password',
-    'resetting.reset.submit' => 'Ubah password',
-    'resetting.flash.success' => 'Password telah berhasil direset',
-    'resetting.email.subject' => 'Reset Password',
+    'resetting.check_email' => 'Sebuah surel telah dikirim. Anda harus mengklik tautan di dalam email tersebut agar dapat menata ulang kata sandi anda.
+Catatan: Anda hanya bisa meminta kata sandi baru dalam %tokenLifetime% jam.
+
+Apabila anda tidak menerima surel, cek spam atau ulangi kembali
+',
+    'resetting.request.username' => 'Nama pengguna atau alamat surel',
+    'resetting.request.submit' => 'Tata ulang kata sandi',
+    'resetting.reset.submit' => 'Ubah kata sandi',
+    'resetting.flash.success' => 'Kata sandi telah berhasil ditata ulang.',
+    'resetting.email.subject' => 'Tata ulang kata sandi',
     'resetting.email.message' => 'Halo %username%!
 
-Untuk mereset password anda mohon kunjungi halaman berikut:
-%confirmationUrl%
+Untuk menata kata sandi anda mohon kunjungi halaman berikut %confirmationUrl%
 
 Hormat Kami,
 Tim Website.
@@ -176,12 +181,12 @@ Tim Website.
     'layout.logged_in_as' => 'Masuk sebagai %username%',
     'form.group_name' => 'Nama Grup',
     'form.username' => 'Nama Pengguna',
-    'form.email' => 'Email',
-    'form.current_password' => 'Password saat ini',
-    'form.password' => 'Password',
-    'form.password_confirmation' => 'Verifikasi Password',
-    'form.new_password' => 'Password Baru',
-    'form.new_password_confirmation' => 'Masukkan Ulang Password Baru Anda',
+    'form.email' => 'Surel',
+    'form.current_password' => 'Kata sandi saat ini',
+    'form.password' => 'Kata sandi',
+    'form.password_confirmation' => 'Ulangi kata sandi',
+    'form.new_password' => 'Kata sandi Baru',
+    'form.new_password_confirmation' => 'Ulangi kata sandi baru',
   ),
 ));
 
@@ -373,8 +378,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -390,7 +398,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

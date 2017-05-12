@@ -104,6 +104,7 @@ $catalogue = new MessageCatalogue('ja', array (
     'fos_user.group.blank' => '名前を入力してください',
     'fos_user.group.short' => '名前が短すぎます',
     'fos_user.group.long' => '名前が長すぎます',
+    'fos_group.name.already_used' => 'その名前は既に使用されています',
   ),
   'security' => 
   array (
@@ -155,7 +156,6 @@ $catalogue = new MessageCatalogue('ja', array (
 
 開発チーム
 ',
-    'resetting.check_email' => '%email% 宛にメールを送信しました。メールに記載された確認 URL にアクセスして、アカウントを有効化してください。',
     'resetting.request.username' => 'ユーザー名かメールアドレス',
     'resetting.request.submit' => 'パスワードのリセット',
     'resetting.reset.submit' => 'パスワードの変更',
@@ -371,8 +371,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -388,7 +391,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

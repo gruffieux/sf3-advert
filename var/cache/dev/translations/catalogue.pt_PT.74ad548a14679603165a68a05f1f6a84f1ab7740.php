@@ -155,15 +155,19 @@ Para completar a validação da sua conta, por favor visite o seguinte link: %co
 Cumprimentos,
 A equipa.
 ',
-    'resetting.check_email' => 'Foi enviado um email para %email% com a informação necessária para recuperar a sua password.',
-    'resetting.request.username' => 'Utilizador',
+    'resetting.check_email' => 'Foi enviado um email. Este contém um link que terá de visitar para recuperar a sua password.
+Nota: Só poderá voltar a pedir para recuperar a sua password dentro de %tokenLifetime% horas.
+
+Se não receber o email verifique a pasta de spam do seu cliente de email ou tente novamente.
+',
+    'resetting.request.username' => 'Utilizador ou endereço de email',
     'resetting.request.submit' => 'Recuperar password',
     'resetting.reset.submit' => 'Alterar password',
     'resetting.flash.success' => 'A password foi recuperada com sucesso',
     'resetting.email.subject' => 'Recuperar password',
     'resetting.email.message' => 'Olá %username%!
 
-Para recuperar a password, por favor visite o seguinte link: %confirmationUrl%
+Para recuperar a password, por favor aceda a %confirmationUrl%
 
 Cumprimentos,
 A equipa.
@@ -177,9 +181,9 @@ A equipa.
     'form.email' => 'Email',
     'form.current_password' => 'Password atual',
     'form.password' => 'Password',
-    'form.password_confirmation' => 'Verificar',
+    'form.password_confirmation' => 'Verificar password',
     'form.new_password' => 'Nova password',
-    'form.new_password_confirmation' => 'Verificar',
+    'form.new_password_confirmation' => 'Verificar a nova password',
   ),
   'VichUploaderBundle' => 
   array (
@@ -376,8 +380,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -393,7 +400,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

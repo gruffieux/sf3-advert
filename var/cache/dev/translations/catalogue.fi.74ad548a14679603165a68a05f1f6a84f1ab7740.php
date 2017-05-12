@@ -81,6 +81,7 @@ $catalogue = new MessageCatalogue('fi', array (
     'fos_user.group.blank' => 'Syötä nimi.',
     'fos_user.group.short' => 'Nimi on liian lyhyt.',
     'fos_user.group.long' => 'Nimi on liian pitkä.',
+    'fos_group.name.already_used' => 'Nimi on jo käytössä.',
   ),
   'FOSUserBundle' => 
   array (
@@ -112,7 +113,6 @@ Aktivoidaksesi tunnuksesi, ole hyvä ja klikkaa %confirmationUrl%
 
 Terveisin ylläpito
 ',
-    'resetting.check_email' => 'Sähköposti on lähetetty osoitteeseen %email%. Se sisältää linkin, jota klikkaamalla salasana alustetaan.',
     'resetting.request.username' => 'Käyttäjätunnus tai sähköpostiosoite',
     'resetting.request.submit' => 'Alusta salasana',
     'resetting.reset.submit' => 'Vaihda salasana',
@@ -327,8 +327,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -344,7 +347,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

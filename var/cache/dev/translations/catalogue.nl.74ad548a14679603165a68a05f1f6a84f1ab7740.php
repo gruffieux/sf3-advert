@@ -52,7 +52,7 @@ $catalogue = new MessageCatalogue('nl', array (
     'This value should have exactly {{ limit }} character.|This value should have exactly {{ limit }} characters.' => 'Deze waarde moet exact {{ limit }} teken lang zijn.|Deze waarde moet exact {{ limit }} tekens lang zijn.',
     'The file was only partially uploaded.' => 'Het bestand is slechts gedeeltelijk geüpload.',
     'No file was uploaded.' => 'Er is geen bestand geüpload.',
-    'No temporary folder was configured in php.ini.' => 'Er is geen tijdelijke map geconfigureerd in php.ini.',
+    'No temporary folder was configured in php.ini.' => 'Er is geen tijdelijke map geconfigureerd in php.ini, of de gespecificeerde map bestaat niet.',
     'Cannot write temporary file to disk.' => 'Kan het tijdelijke bestand niet wegschrijven op disk.',
     'A PHP extension caused the upload to fail.' => 'De upload is mislukt vanwege een PHP-extensie.',
     'This collection should contain {{ limit }} element or more.|This collection should contain {{ limit }} elements or more.' => 'Deze collectie moet {{ limit }} element of meer bevatten.|Deze collectie moet {{ limit }} elementen of meer bevatten.',
@@ -157,7 +157,7 @@ het Team.
     'resetting.check_email' => 'Er werd een email gestuurd. De email bevat een link om je wachtwoord te resetten.
 Opgelet: Je kan pas na %tokenLifetime% uur een nieuw wachtwoord aanvragen.
 
-Indien je geen email ontvangen hebt, controlleer dan zeker je spam folder of probeer opnieuw.
+Indien je geen email ontvangen hebt, controleer dan zeker je spam folder of probeer opnieuw.
 ',
     'resetting.request.username' => 'Gebruikersnaam of e-mailadres',
     'resetting.request.submit' => 'Reset wachtwoord',
@@ -374,8 +374,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -391,7 +394,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

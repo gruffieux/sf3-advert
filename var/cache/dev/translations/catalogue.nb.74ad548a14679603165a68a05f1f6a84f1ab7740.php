@@ -23,6 +23,7 @@ $catalogue = new MessageCatalogue('nb', array (
     'fos_user.group.blank' => 'Vennligst skriv inn et navn',
     'fos_user.group.short' => 'Navnet er for kort',
     'fos_user.group.long' => 'Navnet er for langt',
+    'fos_group.name.already_used' => 'Dette navnet er opptatt.',
   ),
   'FOSUserBundle' => 
   array (
@@ -55,7 +56,6 @@ For å fullføre aktiveringen av din konto - vennligst besøk %confirmationUrl%
 Med vennlig hilsen,
 Teamet.
 ',
-    'resetting.check_email' => 'En epost har blitt sendt til %email%. Den inneholder en lenke du må klikke på for å tilbakestille passordet.',
     'resetting.request.username' => 'Brukernavn eller epostadresse',
     'resetting.request.submit' => 'Tilbakestill passord',
     'resetting.reset.submit' => 'Endre passord',
@@ -271,8 +271,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -288,7 +291,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

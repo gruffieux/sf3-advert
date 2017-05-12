@@ -101,6 +101,7 @@ $catalogue = new MessageCatalogue('he', array (
     'fos_user.group.blank' => 'יש להזין שם קבוצה',
     'fos_user.group.short' => 'שם קצר מדי',
     'fos_user.group.long' => 'שם ארוך מדי',
+    'fos_group.name.already_used' => 'שם קבוצה בשימוש',
   ),
   'security' => 
   array (
@@ -149,10 +150,17 @@ $catalogue = new MessageCatalogue('he', array (
 
 כדי לסיים הרשמתך יש ללחוץ על קישור זה:  %confirmationUrl%
 
+זה קישור חד-פעמי לאמת סיסמתך.
+
 בברכה,
    הצוות.
 ',
-    'resetting.check_email' => 'הודעת דוא"ל נשלחה ל-%email%. ההודעה מכילה קישור לאיפוס סיסמה שלך.',
+    'resetting.check_email' => 'הודעת דוא"ל נשלחה. ההודעה מכילה קישור לאיפוס סיסמה שלך.
+
+ניתן לבקש איפוס סיסמה תוך %tokenLifetime% שעות.
+
+יש לבדוק תיקיים דואר זבל במידע ולא הגיעה ההודעה.
+',
     'resetting.request.username' => 'שם משתמש או דואר אלקטרוני',
     'resetting.request.submit' => 'איפוס סיסמה',
     'resetting.reset.submit' => 'שינוי סיסמה',
@@ -368,8 +376,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -385,7 +396,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

@@ -104,6 +104,7 @@ $catalogue = new MessageCatalogue('sv', array (
     'fos_user.group.blank' => 'Ange ett namn.',
     'fos_user.group.short' => 'Namnet är för kort.',
     'fos_user.group.long' => 'Namnet är för långt.',
+    'fos_group.name.already_used' => 'Namnet är upptaget',
   ),
   'security' => 
   array (
@@ -151,6 +152,8 @@ $catalogue = new MessageCatalogue('sv', array (
     'registration.email.message' => 'Hej %username%!
 
 För att aktivera ditt konto - vänligen besök %confirmationUrl%
+
+Länken kan endast användas en gång för att aktivera ditt konto.
 
 Hälsningar,
 Teamet.
@@ -371,8 +374,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -388,7 +394,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

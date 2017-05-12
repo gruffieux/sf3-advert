@@ -87,7 +87,7 @@ $catalogue = new MessageCatalogue('it', array (
     'The uploaded file was too large. Please try to upload a smaller file.' => 'Il file caricato è troppo grande. Per favore caricare un file più piccolo.',
     'The CSRF token is invalid. Please try to resubmit the form.' => 'Il token CSRF non è valido. Provare a reinviare il form.',
     'fos_user.username.already_used' => 'Username già in uso.',
-    'fos_user.username.blank' => 'Si prega di inserire uno username.',
+    'fos_user.username.blank' => 'Si prega di inserire un username.',
     'fos_user.username.short' => 'Username troppo breve.',
     'fos_user.username.long' => 'Username troppo lungo.',
     'fos_user.email.already_used' => 'Email già in uso.',
@@ -104,6 +104,7 @@ $catalogue = new MessageCatalogue('it', array (
     'fos_user.group.blank' => 'Si prega di inserire un nome.',
     'fos_user.group.short' => 'Nome troppo breve.',
     'fos_user.group.long' => 'Nome troppo lungo.',
+    'fos_group.name.already_used' => 'Nome già in uso.',
   ),
   'security' => 
   array (
@@ -142,7 +143,7 @@ $catalogue = new MessageCatalogue('it', array (
     'profile.flash.updated' => 'Il profilo è stato aggiornato.',
     'change_password.submit' => 'Cambia password',
     'change_password.flash.success' => 'La password è stata cambiata.',
-    'registration.check_email' => 'Una mail è stata inviata a %email%. Contiene il link d\'attivazione che devi utilizzare per attivare il tuo account.',
+    'registration.check_email' => 'Un\'email è stata inviata a %email%. Contiene il link d\'attivazione che devi utilizzare per attivare il tuo account.',
     'registration.confirmed' => 'Congratulazioni %username%, il tuo account è confermato.',
     'registration.back' => 'Torna alla pagina d\'origine.',
     'registration.submit' => 'Registra',
@@ -152,10 +153,16 @@ $catalogue = new MessageCatalogue('it', array (
 
 Per terminare la validazione del tuo account visita %confirmationUrl%
 
+Questo link può essere utilizzato solo una volta per verificare il tuo account.
+
 Saluti,
 il Team.
 ',
-    'resetting.check_email' => 'Una email è stata inviata a %email%. Contiene il link d\'attivazione che devi utilizzare per il reset della password.',
+    'resetting.check_email' => 'È stata inviata un\'email con il link d\'attivazione che devi utilizzare per il reset della password.
+Nota: è possibile richiedere una password entro %tokenLifetime% ore.
+
+Se non ricevi un\'email verifica la cartella di spam o riprova.
+',
     'resetting.request.username' => 'Username o indirizzo email',
     'resetting.request.submit' => 'Password reset',
     'resetting.reset.submit' => 'Cambia password',
@@ -386,8 +393,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -403,7 +413,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

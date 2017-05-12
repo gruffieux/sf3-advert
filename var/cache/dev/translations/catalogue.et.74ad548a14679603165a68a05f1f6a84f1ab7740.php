@@ -83,6 +83,9 @@ $catalogue = new MessageCatalogue('et', array (
     'group.edit.submit' => 'Muuda grupp',
     'group.show.name' => 'Grupi nimi',
     'group.new.submit' => 'Uus grupp',
+    'group.flash.updated' => 'Grupp muudetud.',
+    'group.flash.created' => 'Uus grupp loodud.',
+    'group.flash.deleted' => 'Grupp kustutatud.',
     'security.login.username' => 'Kasutajanimi',
     'security.login.password' => 'Salasõna',
     'security.login.remember_me' => 'Jäta mind meelde',
@@ -90,24 +93,37 @@ $catalogue = new MessageCatalogue('et', array (
     'profile.show.username' => 'Kasutajanimi',
     'profile.show.email' => 'E-mail',
     'profile.edit.submit' => 'Uuenda',
+    'profile.flash.updated' => 'Profiil uuendatud.',
     'change_password.submit' => 'Muuda salasõna',
-    'registration.check_email' => 'E-mail on saadetud aadressile %email%. Selles sisaldub viide, mis tuleb konto aktiveerimiseks avada.',
+    'change_password.flash.success' => 'Parool muudetud.',
+    'registration.check_email' => 'E-mail on saadetud aadressile %email%. Selles sisaldub viide, mis tuleb konto aktiveerimiseks avada.
+',
     'registration.confirmed' => 'Palju õnne %username%, Sinu konto on aktiveeritud.',
+    'registration.back' => 'Tagasi esialgsele lehele.',
     'registration.submit' => 'Registreeri',
+    'registration.flash.user_created' => 'Kasutaja edukalt loodud.',
+    'registration.email.subject' => 'Tere %username%!',
     'registration.email.message' => 'Tere %username%!
 
-Konto valideerimise edukaks lõpetamiseks palun vajutage viitel %confirmationUrl%
+Konto aktiveerimiseks palun avage viide %confirmationUrl%
+
+Seda viidet saate kasutada vaid ühe korra konto valideerimiseks.
 
 Parimatega,
 Tiim.
 ',
-    'resetting.check_email' => 'E-mail on saadetud aadressile %email%. Selles sisaldub viide, mis tuleb salasõna muutmiseks avada.',
-    'resetting.request.username' => 'Kasutajanimi',
+    'resetting.check_email' => 'E-mail on saadetud. Selles sisaldub viide, mis tuleb salasõna muutmiseks avada.        
+Märkus: Saate uue parooli tellida vaid korra %tokenLifetime% tunni jooksul.
+
+Kui te ei e-maili ei saanud, kontrollige oma spämmikausta või proovige uuesti.
+',
+    'resetting.request.username' => 'Kasutajanimi või e-mail',
     'resetting.request.submit' => 'Saada salasõna',
     'resetting.reset.submit' => 'Muuda salasõna',
+    'resetting.flash.success' => 'Parooli saatmine õnnestus.',
     'resetting.email.message' => 'Tere %username%!
 
-Salasõna muutmiseks palun vajutage viitel %confirmationUrl%
+Salasõna muutmiseks palun avage viide %confirmationUrl%
 
 Parimatega,
 Tiim.
@@ -315,8 +331,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -332,7 +351,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

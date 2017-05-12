@@ -82,6 +82,9 @@ fos_user:
     db_driver: orm
     firewall_name: main
     user_class: Gbrfix\UserBundle\Entity\User
+    from_email:
+        address: gabriel.ruffieux@bluewin.ch
+        sender_name: Gabriel Ruffieux
     
 # Assetic Bundle Configuration
 assetic:

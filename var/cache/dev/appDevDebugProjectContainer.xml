@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
   <parameters>
-    <parameter key="kernel.root_dir">/home/gab/workspace/Symfony/app</parameter>
+    <parameter key="kernel.root_dir">/home/gab/workspace/symfony/sf3-advert/app</parameter>
     <parameter key="kernel.environment">dev</parameter>
     <parameter key="kernel.debug">true</parameter>
     <parameter key="kernel.name">app</parameter>
-    <parameter key="kernel.cache_dir">/home/gab/workspace/Symfony/var/cache/dev</parameter>
-    <parameter key="kernel.logs_dir">/home/gab/workspace/Symfony/var/logs</parameter>
+    <parameter key="kernel.cache_dir">/home/gab/workspace/symfony/sf3-advert/var/cache/dev</parameter>
+    <parameter key="kernel.logs_dir">/home/gab/workspace/symfony/sf3-advert/var/logs</parameter>
     <parameter key="kernel.bundles" type="collection">
       <parameter key="FrameworkBundle">Symfony\Bundle\FrameworkBundle\FrameworkBundle</parameter>
       <parameter key="SecurityBundle">Symfony\Bundle\SecurityBundle\SecurityBundle</parameter>
@@ -29,11 +29,113 @@
       <parameter key="DoctrineFixturesBundle">Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle</parameter>
       <parameter key="CoreSphereConsoleBundle">CoreSphere\ConsoleBundle\CoreSphereConsoleBundle</parameter>
     </parameter>
+    <parameter key="kernel.bundles_metadata" type="collection">
+      <parameter key="FrameworkBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\FrameworkBundle</parameter>
+      </parameter>
+      <parameter key="SecurityBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\SecurityBundle</parameter>
+      </parameter>
+      <parameter key="TwigBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\TwigBundle</parameter>
+      </parameter>
+      <parameter key="MonologBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/symfony/monolog-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\MonologBundle</parameter>
+      </parameter>
+      <parameter key="SwiftmailerBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/symfony/swiftmailer-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\SwiftmailerBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/doctrine/doctrine-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\DoctrineBundle</parameter>
+      </parameter>
+      <parameter key="SensioFrameworkExtraBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/sensio/framework-extra-bundle</parameter>
+        <parameter key="namespace">Sensio\Bundle\FrameworkExtraBundle</parameter>
+      </parameter>
+      <parameter key="GbrfixPlatformBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/PlatformBundle</parameter>
+        <parameter key="namespace">Gbrfix\PlatformBundle</parameter>
+      </parameter>
+      <parameter key="StofDoctrineExtensionsBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/stof/doctrine-extensions-bundle</parameter>
+        <parameter key="namespace">Stof\DoctrineExtensionsBundle</parameter>
+      </parameter>
+      <parameter key="GbrfixUserBundle" type="collection">
+        <parameter key="parent">FOSUserBundle</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/UserBundle</parameter>
+        <parameter key="namespace">Gbrfix\UserBundle</parameter>
+      </parameter>
+      <parameter key="FOSUserBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle</parameter>
+        <parameter key="namespace">FOS\UserBundle</parameter>
+      </parameter>
+      <parameter key="GbrfixBigbrotherBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/BigbrotherBundle</parameter>
+        <parameter key="namespace">Gbrfix\BigbrotherBundle</parameter>
+      </parameter>
+      <parameter key="AsseticBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/symfony/assetic-bundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\AsseticBundle</parameter>
+      </parameter>
+      <parameter key="VichUploaderBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle</parameter>
+        <parameter key="namespace">Vich\UploaderBundle</parameter>
+      </parameter>
+      <parameter key="DebugBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\DebugBundle</parameter>
+      </parameter>
+      <parameter key="WebProfilerBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle</parameter>
+        <parameter key="namespace">Symfony\Bundle\WebProfilerBundle</parameter>
+      </parameter>
+      <parameter key="SensioDistributionBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/sensio/distribution-bundle</parameter>
+        <parameter key="namespace">Sensio\Bundle\DistributionBundle</parameter>
+      </parameter>
+      <parameter key="SensioGeneratorBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/sensio/generator-bundle</parameter>
+        <parameter key="namespace">Sensio\Bundle\GeneratorBundle</parameter>
+      </parameter>
+      <parameter key="DoctrineFixturesBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/doctrine/doctrine-fixtures-bundle</parameter>
+        <parameter key="namespace">Doctrine\Bundle\FixturesBundle</parameter>
+      </parameter>
+      <parameter key="CoreSphereConsoleBundle" type="collection">
+        <parameter key="parent">null</parameter>
+        <parameter key="path">/home/gab/workspace/symfony/sf3-advert/vendor/coresphere/console-bundle</parameter>
+        <parameter key="namespace">CoreSphere\ConsoleBundle</parameter>
+      </parameter>
+    </parameter>
     <parameter key="kernel.charset">UTF-8</parameter>
     <parameter key="kernel.container_class">appDevDebugProjectContainer</parameter>
     <parameter key="database_host">127.0.0.1</parameter>
     <parameter key="database_port">null</parameter>
-    <parameter key="database_name">symfony</parameter>
+    <parameter key="database_name">sf3-advert</parameter>
     <parameter key="database_user">root</parameter>
     <parameter key="database_password">1234</parameter>
     <parameter key="mailer_transport">smtp</parameter>
@@ -54,7 +156,7 @@
       <parameter key="cookie_httponly">true</parameter>
       <parameter key="gc_probability">1</parameter>
     </parameter>
-    <parameter key="session.save_path">/home/gab/workspace/Symfony/app/../var/sessions/dev</parameter>
+    <parameter key="session.save_path">/home/gab/workspace/symfony/sf3-advert/app/../var/sessions/dev</parameter>
     <parameter key="session.metadata.update_threshold">0</parameter>
     <parameter key="form.type_extension.csrf.enabled">true</parameter>
     <parameter key="form.type_extension.csrf.field_name">_token</parameter>
@@ -68,7 +170,7 @@
     <parameter key="translator.logging">true</parameter>
     <parameter key="profiler_listener.only_exceptions">false</parameter>
     <parameter key="profiler_listener.only_master_requests">false</parameter>
-    <parameter key="profiler.storage.dsn">file:/home/gab/workspace/Symfony/var/cache/dev/profiler</parameter>
+    <parameter key="profiler.storage.dsn">file:/home/gab/workspace/symfony/sf3-advert/var/cache/dev/profiler</parameter>
     <parameter key="router.options.generator_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</parameter>
     <parameter key="router.options.generator_dumper_class">Symfony\Component\Routing\Generator\Dumper\PhpGeneratorDumper</parameter>
@@ -80,12 +182,12 @@
     <parameter key="router.request_context.host">localhost</parameter>
     <parameter key="router.request_context.scheme">http</parameter>
     <parameter key="router.request_context.base_url"></parameter>
-    <parameter key="router.resource">/home/gab/workspace/Symfony/var/cache/dev/assetic/routing.yml</parameter>
+    <parameter key="router.resource">/home/gab/workspace/symfony/sf3-advert/var/cache/dev/assetic/routing.yml</parameter>
     <parameter key="router.cache_class_prefix">appDevDebugProjectContainer</parameter>
     <parameter key="request_listener.http_port">80</parameter>
     <parameter key="request_listener.https_port">443</parameter>
     <parameter key="debug.error_handler.throw_at">-1</parameter>
-    <parameter key="debug.container.dump">/home/gab/workspace/Symfony/var/cache/dev/appDevDebugProjectContainer.xml</parameter>
+    <parameter key="debug.container.dump">/home/gab/workspace/symfony/sf3-advert/var/cache/dev/appDevDebugProjectContainer.xml</parameter>
     <parameter key="security.authentication.trust_resolver.anonymous_class">Symfony\Component\Security\Core\Authentication\Token\AnonymousToken</parameter>
     <parameter key="security.authentication.trust_resolver.rememberme_class">Symfony\Component\Security\Core\Authentication\Token\RememberMeToken</parameter>
     <parameter key="security.role_hierarchy.roles" type="collection">
@@ -182,7 +284,6 @@
     <parameter key="swiftmailer.email_sender.listener.class">Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener</parameter>
     <parameter key="swiftmailer.data_collector.class">Symfony\Bundle\SwiftmailerBundle\DataCollector\MessageDataCollector</parameter>
     <parameter key="swiftmailer.mailer.default.transport.name">smtp</parameter>
-    <parameter key="swiftmailer.mailer.default.delivery.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.encryption">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.port">25</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.host">smtpauths.bluewin.ch</parameter>
@@ -192,10 +293,11 @@
     <parameter key="swiftmailer.mailer.default.transport.smtp.timeout">30</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.source_ip">null</parameter>
     <parameter key="swiftmailer.mailer.default.transport.smtp.local_domain">null</parameter>
-    <parameter key="swiftmailer.spool.default.memory.path">/home/gab/workspace/Symfony/var/cache/dev/swiftmailer/spool/default</parameter>
+    <parameter key="swiftmailer.spool.default.memory.path">/home/gab/workspace/symfony/sf3-advert/var/cache/dev/swiftmailer/spool/default</parameter>
     <parameter key="swiftmailer.mailer.default.spool.enabled">true</parameter>
     <parameter key="swiftmailer.mailer.default.plugin.impersonate">null</parameter>
     <parameter key="swiftmailer.mailer.default.single_address">null</parameter>
+    <parameter key="swiftmailer.mailer.default.delivery.enabled">true</parameter>
     <parameter key="swiftmailer.spool.enabled">true</parameter>
     <parameter key="swiftmailer.delivery.enabled">true</parameter>
     <parameter key="swiftmailer.single_address">null</parameter>
@@ -301,7 +403,7 @@
     <parameter key="doctrine.orm.naming_strategy.underscore.class">Doctrine\ORM\Mapping\UnderscoreNamingStrategy</parameter>
     <parameter key="doctrine.orm.quote_strategy.default.class">Doctrine\ORM\Mapping\DefaultQuoteStrategy</parameter>
     <parameter key="doctrine.orm.quote_strategy.ansi.class">Doctrine\ORM\Mapping\AnsiQuoteStrategy</parameter>
-    <parameter key="doctrine.orm.entity_listener_resolver.class">Doctrine\ORM\Mapping\DefaultEntityListenerResolver</parameter>
+    <parameter key="doctrine.orm.entity_listener_resolver.class">Doctrine\Bundle\DoctrineBundle\Mapping\ContainerAwareEntityListenerResolver</parameter>
     <parameter key="doctrine.orm.second_level_cache.default_cache_factory.class">Doctrine\ORM\Cache\DefaultCacheFactory</parameter>
     <parameter key="doctrine.orm.second_level_cache.default_region.class">Doctrine\ORM\Cache\Region\DefaultRegion</parameter>
     <parameter key="doctrine.orm.second_level_cache.filelock_region.class">Doctrine\ORM\Cache\Region\FileLockRegion</parameter>
@@ -310,7 +412,7 @@
     <parameter key="doctrine.orm.second_level_cache.cache_configuration.class">Doctrine\ORM\Cache\CacheConfiguration</parameter>
     <parameter key="doctrine.orm.second_level_cache.regions_configuration.class">Doctrine\ORM\Cache\RegionsConfiguration</parameter>
     <parameter key="doctrine.orm.auto_generate_proxy_classes">true</parameter>
-    <parameter key="doctrine.orm.proxy_dir">/home/gab/workspace/Symfony/var/cache/dev/doctrine/orm/Proxies</parameter>
+    <parameter key="doctrine.orm.proxy_dir">/home/gab/workspace/symfony/sf3-advert/var/cache/dev/doctrine/orm/Proxies</parameter>
     <parameter key="doctrine.orm.proxy_namespace">Proxies</parameter>
     <parameter key="sensio_framework_extra.view.guesser.class">Sensio\Bundle\FrameworkExtraBundle\Templating\TemplateGuesser</parameter>
     <parameter key="sensio_framework_extra.controller.listener.class">Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener</parameter>
@@ -347,8 +449,8 @@
     <parameter key="fos_user.backend_type_orm">true</parameter>
     <parameter key="fos_user.security.interactive_login_listener.class">FOS\UserBundle\EventListener\LastLoginListener</parameter>
     <parameter key="fos_user.security.login_manager.class">FOS\UserBundle\Security\LoginManager</parameter>
-    <parameter key="fos_user.resetting.email.template">FOSUserBundle:Resetting:email.txt.twig</parameter>
-    <parameter key="fos_user.registration.confirmation.template">FOSUserBundle:Registration:email.txt.twig</parameter>
+    <parameter key="fos_user.resetting.email.template">@FOSUser/Resetting/email.txt.twig</parameter>
+    <parameter key="fos_user.registration.confirmation.template">@FOSUser/Registration/email.txt.twig</parameter>
     <parameter key="fos_user.storage">orm</parameter>
     <parameter key="fos_user.firewall_name">main</parameter>
     <parameter key="fos_user.model_manager_name">null</parameter>
@@ -360,7 +462,7 @@
       <parameter>Default</parameter>
     </parameter>
     <parameter key="fos_user.registration.confirmation.from_email" type="collection">
-      <parameter key="webmaster@example.com">webmaster</parameter>
+      <parameter key="gabriel.ruffieux@bluewin.ch">Gabriel Ruffieux</parameter>
     </parameter>
     <parameter key="fos_user.registration.confirmation.enabled">false</parameter>
     <parameter key="fos_user.registration.form.type">FOS\UserBundle\Form\Type\RegistrationFormType</parameter>
@@ -376,8 +478,9 @@
       <parameter>Default</parameter>
     </parameter>
     <parameter key="fos_user.resetting.email.from_email" type="collection">
-      <parameter key="webmaster@example.com">webmaster</parameter>
+      <parameter key="gabriel.ruffieux@bluewin.ch">Gabriel Ruffieux</parameter>
     </parameter>
+    <parameter key="fos_user.resetting.retry_ttl">7200</parameter>
     <parameter key="fos_user.resetting.token_ttl">86400</parameter>
     <parameter key="fos_user.resetting.form.type">FOS\UserBundle\Form\Type\ResettingFormType</parameter>
     <parameter key="fos_user.resetting.form.name">fos_user_resetting_form</parameter>
@@ -399,7 +502,7 @@
     <parameter key="assetic.worker.cache_busting.class">Assetic\Factory\Worker\CacheBustingWorker</parameter>
     <parameter key="assetic.value_supplier.class">Symfony\Bundle\AsseticBundle\DefaultValueSupplier</parameter>
     <parameter key="assetic.node.paths" type="collection"/>
-    <parameter key="assetic.cache_dir">/home/gab/workspace/Symfony/var/cache/dev/assetic</parameter>
+    <parameter key="assetic.cache_dir">/home/gab/workspace/symfony/sf3-advert/var/cache/dev/assetic</parameter>
     <parameter key="assetic.bundles" type="collection">
       <parameter>FrameworkBundle</parameter>
       <parameter>SecurityBundle</parameter>
@@ -430,8 +533,8 @@
     <parameter key="assetic.debug">true</parameter>
     <parameter key="assetic.use_controller">true</parameter>
     <parameter key="assetic.enable_profiler">false</parameter>
-    <parameter key="assetic.read_from">/home/gab/workspace/Symfony/app/../web</parameter>
-    <parameter key="assetic.write_to">/home/gab/workspace/Symfony/app/../web</parameter>
+    <parameter key="assetic.read_from">/home/gab/workspace/symfony/sf3-advert/app/../web</parameter>
+    <parameter key="assetic.write_to">/home/gab/workspace/symfony/sf3-advert/app/../web</parameter>
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">/usr/bin/java</parameter>
     <parameter key="assetic.node.bin">/usr/bin/node</parameter>
@@ -457,7 +560,7 @@
     <parameter key="vich_uploader.mappings" type="collection">
       <parameter key="attachement_document" type="collection">
         <parameter key="uri_prefix">/docs</parameter>
-        <parameter key="upload_destination">/home/gab/workspace/Symfony/app/../web/uploads/docs</parameter>
+        <parameter key="upload_destination">/home/gab/workspace/symfony/sf3-advert/app/../web/uploads/docs</parameter>
         <parameter key="inject_on_load">false</parameter>
         <parameter key="delete_on_update">true</parameter>
         <parameter key="delete_on_remove">true</parameter>
@@ -465,7 +568,10 @@
           <parameter key="service">null</parameter>
           <parameter key="options">null</parameter>
         </parameter>
-        <parameter key="directory_namer">null</parameter>
+        <parameter key="directory_namer" type="collection">
+          <parameter key="service">null</parameter>
+          <parameter key="options">null</parameter>
+        </parameter>
         <parameter key="db_driver">orm</parameter>
       </parameter>
     </parameter>
@@ -592,7 +698,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>/home/gab/workspace/Symfony/app/Resources</argument>
+                <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources</argument>
               </service>
             </argument>
             <argument type="service" id="templating.locator"/>
@@ -625,7 +731,7 @@
               <service class="Symfony\Bundle\FrameworkBundle\CacheWarmer\TemplateFinder" public="false">
                 <argument type="service" id="kernel"/>
                 <argument type="service" id="templating.filename_parser"/>
-                <argument>/home/gab/workspace/Symfony/app/Resources</argument>
+                <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources</argument>
               </service>
             </argument>
             <argument type="collection"/>
@@ -638,7 +744,7 @@
             <argument type="service">
               <service class="Symfony\Bundle\TwigBundle\TemplateIterator" public="false">
                 <argument type="service" id="kernel"/>
-                <argument>/home/gab/workspace/Symfony/app</argument>
+                <argument>/home/gab/workspace/symfony/sf3-advert/app</argument>
                 <argument type="collection"/>
               </service>
             </argument>
@@ -670,10 +776,10 @@
               <argument type="service">
                 <service class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
                   <tag name="cache.pool"/>
-                  <argument>HsOFo2Pph3</argument>
+                  <argument>Fl96V1PNfq</argument>
                   <argument>0</argument>
-                  <argument>GZEGa+vZ88S7rqOylP7w3+</argument>
-                  <argument>/home/gab/workspace/Symfony/var/cache/dev/pools</argument>
+                  <argument>dcC93Uh+rPu3PyI0dm43KG</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
                 </service>
@@ -683,10 +789,10 @@
               <argument type="service">
                 <service class="Symfony\Component\Cache\Adapter\AdapterInterface" public="false">
                   <tag name="cache.pool"/>
-                  <argument>PBTDOiV6Qc</argument>
+                  <argument>i72JeHlYdF</argument>
                   <argument>0</argument>
-                  <argument>GZEGa+vZ88S7rqOylP7w3+</argument>
-                  <argument>/home/gab/workspace/Symfony/var/cache/dev/pools</argument>
+                  <argument>dcC93Uh+rPu3PyI0dm43KG</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev/pools</argument>
                   <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
                   <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
                 </service>
@@ -704,7 +810,7 @@
     <service id="filesystem" class="Symfony\Component\Filesystem\Filesystem"/>
     <service id="file_locator" class="Symfony\Component\HttpKernel\Config\FileLocator">
       <argument type="service" id="kernel"/>
-      <argument>/home/gab/workspace/Symfony/app/Resources</argument>
+      <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources</argument>
     </service>
     <service id="uri_signer" class="Symfony\Component\HttpKernel\UriSigner">
       <argument>ed06a2ecdd3a008d7fc80c4abdf896dbd05bba86</argument>
@@ -821,347 +927,352 @@
         </argument>
       </argument>
       <argument type="collection">
-        <argument key="cache_dir">/home/gab/workspace/Symfony/var/cache/dev/translations</argument>
+        <argument key="cache_dir">/home/gab/workspace/symfony/sf3-advert/var/cache/dev/translations</argument>
         <argument key="debug">true</argument>
         <argument key="resource_files" type="collection">
-          <argument key="nl" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.nl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.nl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nl.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nl.yml</argument>
-          </argument>
-          <argument key="ro" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ro.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ro.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ro.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ro.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ro.yml</argument>
-          </argument>
-          <argument key="ca" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ca.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ca.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ca.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ca.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ca.yml</argument>
-          </argument>
-          <argument key="de" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.de.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.de.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.de.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/src/Gbrfix/PlatformBundle/Resources/translations/messages.de.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.de.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.de.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.de.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/coresphere/console-bundle/Resources/translations/messages.de.yml</argument>
-          </argument>
-          <argument key="nn" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nn.xlf</argument>
-          </argument>
-          <argument key="eu" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.eu.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.eu.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.eu.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.eu.yml</argument>
-          </argument>
-          <argument key="pt" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.pt.yml</argument>
-          </argument>
-          <argument key="sq" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sq.xlf</argument>
-          </argument>
-          <argument key="sr_Latn" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Latn.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sr_Latn.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sr_Latn.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sr_Latn.yml</argument>
-          </argument>
-          <argument key="no" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.no.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.no.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.no.xlf</argument>
-          </argument>
-          <argument key="et" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.et.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.et.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.et.yml</argument>
-          </argument>
-          <argument key="af" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.af.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.af.yml</argument>
-          </argument>
-          <argument key="sv" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sv.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sv.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sv.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sv.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sv.yml</argument>
-          </argument>
-          <argument key="pt_BR" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt_BR.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.pt_BR.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt_BR.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt_BR.yml</argument>
-          </argument>
-          <argument key="hy" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hy.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hy.xlf</argument>
-          </argument>
-          <argument key="gl" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.gl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.gl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.gl.xlf</argument>
-          </argument>
-          <argument key="ar" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ar.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ar.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ar.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ar.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ar.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.ar.yml</argument>
-          </argument>
-          <argument key="he" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.he.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.he.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.he.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.he.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.he.yml</argument>
-          </argument>
-          <argument key="az" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.az.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.az.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.az.xlf</argument>
-          </argument>
-          <argument key="hr" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hr.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hr.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.hr.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hr.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hr.yml</argument>
-          </argument>
-          <argument key="sr_Cyrl" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Cyrl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sr_Cyrl.xlf</argument>
-          </argument>
-          <argument key="zh_TW" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_TW.xlf</argument>
-          </argument>
-          <argument key="fa" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fa.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fa.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.fa.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fa.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fa.yml</argument>
-          </argument>
-          <argument key="en" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.en.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.en.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.en.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/src/Gbrfix/PlatformBundle/Resources/translations/messages.en.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.en.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.en.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.en.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/coresphere/console-bundle/Resources/translations/messages.en.yml</argument>
-          </argument>
-          <argument key="it" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.it.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.it.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.it.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.it.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.it.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.it.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/coresphere/console-bundle/Resources/translations/messages.it.yml</argument>
-          </argument>
-          <argument key="es" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.es.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.es.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.es.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.es.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.es.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.es.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/coresphere/console-bundle/Resources/translations/messages.es.yml</argument>
-          </argument>
-          <argument key="zh_CN" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.zh_CN.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.zh_CN.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.zh_CN.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.zh_CN.yml</argument>
-          </argument>
-          <argument key="fr" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fr.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fr.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.fr.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/src/Gbrfix/PlatformBundle/Resources/translations/messages.fr.yml</argument>
-            <argument>/home/gab/workspace/Symfony/src/Gbrfix/UserBundle/Resources/translations/validators.fr.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fr.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fr.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.fr.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/coresphere/console-bundle/Resources/translations/messages.fr.yml</argument>
+          <argument key="el" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.el.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.el.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.el.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.el.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.el.yml</argument>
           </argument>
           <argument key="id" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.id.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.id.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.id.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.id.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.id.yml</argument>
-          </argument>
-          <argument key="lt" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lt.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lt.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.lt.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lt.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lt.yml</argument>
-          </argument>
-          <argument key="vi" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.vi.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.vi.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.vi.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.vi.yml</argument>
-          </argument>
-          <argument key="tr" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.tr.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.tr.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.tr.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.tr.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.tr.yml</argument>
-          </argument>
-          <argument key="bg" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.bg.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.bg.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.bg.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.bg.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.bg.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/coresphere/console-bundle/Resources/translations/messages.bg.yml</argument>
-          </argument>
-          <argument key="lb" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lb.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lb.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.lb.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lb.yml</argument>
-          </argument>
-          <argument key="ja" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ja.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ja.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ja.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ja.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ja.yml</argument>
-          </argument>
-          <argument key="ru" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ru.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ru.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ru.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ru.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ru.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.ru.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/coresphere/console-bundle/Resources/translations/messages.ru.yml</argument>
-          </argument>
-          <argument key="fi" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fi.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fi.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fi.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fi.yml</argument>
-          </argument>
-          <argument key="mn" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.mn.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.mn.xlf</argument>
-          </argument>
-          <argument key="sl" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sl.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sl.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.sl.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.id.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.id.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.id.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.id.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.id.yml</argument>
           </argument>
           <argument key="uk" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.uk.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.uk.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.uk.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.uk.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.uk.yml</argument>
-          </argument>
-          <argument key="hu" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hu.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hu.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.hu.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hu.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hu.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.hu.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.uk.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.uk.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.uk.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.uk.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.uk.yml</argument>
           </argument>
           <argument key="lv" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lv.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lv.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.lv.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lv.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lv.yml</argument>
-          </argument>
-          <argument key="th" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.th.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.th.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.th.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.th.yml</argument>
-          </argument>
-          <argument key="da" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.da.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.da.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.da.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.da.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.da.yml</argument>
-          </argument>
-          <argument key="sk" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sk.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sk.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sk.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sk.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sk.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lv.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lv.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.lv.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lv.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lv.yml</argument>
           </argument>
           <argument key="cs" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cs.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.cs.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.cs.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.cs.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.cs.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cs.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.cs.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.cs.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.cs.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.cs.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.cs.yml</argument>
+          </argument>
+          <argument key="it" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.it.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.it.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.it.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.it.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.it.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.it.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/coresphere/console-bundle/Resources/translations/messages.it.yml</argument>
+          </argument>
+          <argument key="sr_Latn" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Latn.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sr_Latn.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sr_Latn.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sr_Latn.yml</argument>
+          </argument>
+          <argument key="sq" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sq.xlf</argument>
+          </argument>
+          <argument key="he" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.he.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.he.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.he.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.he.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.he.yml</argument>
+          </argument>
+          <argument key="sl" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sl.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sl.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.sl.yml</argument>
+          </argument>
+          <argument key="af" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.af.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.af.yml</argument>
+          </argument>
+          <argument key="sr_Cyrl" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sr_Cyrl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sr_Cyrl.xlf</argument>
+          </argument>
+          <argument key="no" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.no.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.no.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.no.xlf</argument>
+          </argument>
+          <argument key="ru" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ru.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ru.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ru.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ru.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ru.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.ru.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/coresphere/console-bundle/Resources/translations/messages.ru.yml</argument>
+          </argument>
+          <argument key="th" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.th.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.th.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.th.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.th.yml</argument>
+          </argument>
+          <argument key="pt" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.pt.yml</argument>
+          </argument>
+          <argument key="az" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.az.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.az.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.az.xlf</argument>
+          </argument>
+          <argument key="mn" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.mn.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.mn.xlf</argument>
+          </argument>
+          <argument key="hr" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hr.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hr.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.hr.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hr.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hr.yml</argument>
+          </argument>
+          <argument key="ro" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ro.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ro.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ro.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ro.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ro.yml</argument>
+          </argument>
+          <argument key="pt_BR" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pt_BR.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.pt_BR.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pt_BR.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pt_BR.yml</argument>
           </argument>
           <argument key="pl" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.pl.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pl.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pl.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.pl.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/coresphere/console-bundle/Resources/translations/messages.pl.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.pl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.pl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.pl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.pl.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.pl.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.pl.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/coresphere/console-bundle/Resources/translations/messages.pl.yml</argument>
+          </argument>
+          <argument key="tr" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.tr.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.tr.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.tr.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.tr.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.tr.yml</argument>
+          </argument>
+          <argument key="sk" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sk.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sk.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sk.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sk.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sk.yml</argument>
+          </argument>
+          <argument key="sv" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.sv.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.sv.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.sv.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.sv.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.sv.yml</argument>
+          </argument>
+          <argument key="bg" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.bg.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.bg.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.bg.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.bg.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.bg.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/coresphere/console-bundle/Resources/translations/messages.bg.yml</argument>
+          </argument>
+          <argument key="de" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.de.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.de.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.de.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/PlatformBundle/Resources/translations/messages.de.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.de.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.de.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.de.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/coresphere/console-bundle/Resources/translations/messages.de.yml</argument>
           </argument>
           <argument key="cy" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cy.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.cy.xlf</argument>
           </argument>
-          <argument key="el" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.el.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.el.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.el.xlf</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.el.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.el.yml</argument>
+          <argument key="fi" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fi.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fi.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fi.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fi.yml</argument>
+          </argument>
+          <argument key="da" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.da.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.da.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.da.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.da.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.da.yml</argument>
+          </argument>
+          <argument key="vi" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.vi.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.vi.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.vi.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.vi.yml</argument>
+          </argument>
+          <argument key="eu" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.eu.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.eu.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.eu.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.eu.yml</argument>
+          </argument>
+          <argument key="lt" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lt.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lt.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.lt.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lt.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.lt.yml</argument>
+          </argument>
+          <argument key="zh_CN" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.zh_CN.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.zh_CN.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.zh_CN.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.zh_CN.yml</argument>
+          </argument>
+          <argument key="hu" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hu.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hu.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.hu.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.hu.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.hu.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.hu.yml</argument>
+          </argument>
+          <argument key="et" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.et.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.et.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.et.yml</argument>
+          </argument>
+          <argument key="zh_TW" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.zh_TW.xlf</argument>
+          </argument>
+          <argument key="ar" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ar.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ar.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ar.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ar.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ar.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.ar.yml</argument>
+          </argument>
+          <argument key="nl" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.nl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.nl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nl.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nl.yml</argument>
+          </argument>
+          <argument key="gl" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.gl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.gl.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.gl.xlf</argument>
+          </argument>
+          <argument key="en" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.en.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.en.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.en.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/PlatformBundle/Resources/translations/messages.en.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.en.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.en.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.en.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/coresphere/console-bundle/Resources/translations/messages.en.yml</argument>
+          </argument>
+          <argument key="hy" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.hy.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.hy.xlf</argument>
+          </argument>
+          <argument key="fr" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fr.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fr.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.fr.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/PlatformBundle/Resources/translations/messages.fr.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/UserBundle/Resources/translations/validators.fr.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fr.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fr.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.fr.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/coresphere/console-bundle/Resources/translations/messages.fr.yml</argument>
+          </argument>
+          <argument key="ca" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ca.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ca.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ca.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ca.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ca.yml</argument>
+          </argument>
+          <argument key="lb" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.lb.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.lb.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.lb.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.lb.yml</argument>
+          </argument>
+          <argument key="fa" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.fa.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.fa.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.fa.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.fa.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.fa.yml</argument>
+          </argument>
+          <argument key="es" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.es.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.es.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.es.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.es.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.es.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/translations/VichUploaderBundle.es.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/coresphere/console-bundle/Resources/translations/messages.es.yml</argument>
+          </argument>
+          <argument key="ja" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.ja.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/translations/validators.ja.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ja.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ja.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ja.yml</argument>
+          </argument>
+          <argument key="nn" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Validator/Resources/translations/validators.nn.xlf</argument>
           </argument>
           <argument key="ua" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ua.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.ua.xlf</argument>
           </argument>
           <argument key="pt_PT" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.pt_PT.xlf</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Security/Core/Resources/translations/security.pt_PT.xlf</argument>
           </argument>
           <argument key="ky" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ky.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ky.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.ky.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.ky.yml</argument>
+          </argument>
+          <argument key="eo" type="collection">
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.eo.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.eo.yml</argument>
           </argument>
           <argument key="nb" type="collection">
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nb.yml</argument>
-            <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nb.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/validators.nb.yml</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/translations/FOSUserBundle.nb.yml</argument>
           </argument>
         </argument>
       </argument>
@@ -1350,19 +1461,19 @@
     </service>
     <service id="cache.app" class="Symfony\Component\Cache\Adapter\FilesystemAdapter">
       <tag name="cache.pool"/>
-      <argument>5xPimk-OjT</argument>
+      <argument>nRiKNTxI09</argument>
       <argument>0</argument>
-      <argument>/home/gab/workspace/Symfony/var/cache/dev/pools</argument>
+      <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev/pools</argument>
       <call method="setLogger">
         <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       </call>
     </service>
     <service id="cache.system" class="Symfony\Component\Cache\Adapter\AdapterInterface">
       <tag name="cache.pool"/>
-      <argument>atfRxG7mV2</argument>
+      <argument>T9vDh-rkAG</argument>
       <argument>0</argument>
-      <argument>GZEGa+vZ88S7rqOylP7w3+</argument>
-      <argument>/home/gab/workspace/Symfony/var/cache/dev/pools</argument>
+      <argument>dcC93Uh+rPu3PyI0dm43KG</argument>
+      <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev/pools</argument>
       <argument type="service" id="monolog.logger.cache" on-invalid="ignore"/>
       <factory class="Symfony\Component\Cache\Adapter\AbstractAdapter" method="createSystemCache"/>
     </service>
@@ -1625,7 +1736,7 @@
     <service id="templating.filename_parser" class="Symfony\Bundle\FrameworkBundle\Templating\TemplateFilenameParser"/>
     <service id="templating.locator" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\TemplateLocator" public="false">
       <argument type="service" id="file_locator"/>
-      <argument>/home/gab/workspace/Symfony/var/cache/dev</argument>
+      <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev</argument>
     </service>
     <service id="validator" class="Symfony\Component\Validator\Validator\ValidatorInterface">
       <factory service="validator.builder" method="getValidator"/>
@@ -1657,8 +1768,8 @@
       </call>
       <call method="addXmlMappings">
         <argument type="collection">
-          <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
-          <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/config/validation.xml</argument>
+          <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Component/Form/Resources/config/validation.xml</argument>
+          <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/config/validation.xml</argument>
         </argument>
       </call>
       <call method="enableAnnotationMapping">
@@ -1679,7 +1790,7 @@
         </argument>
       </call>
       <call method="addXmlMapping">
-        <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/../../Resources/config/storage-validation/orm.xml</argument>
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/DependencyInjection/Compiler/../../Resources/config/storage-validation/orm.xml</argument>
       </call>
       <factory class="Symfony\Component\Validator\Validation" method="createValidatorBuilder"/>
     </service>
@@ -1699,7 +1810,7 @@
       <tag name="monolog.logger" channel="profiler"/>
       <argument type="service">
         <service class="Symfony\Component\HttpKernel\Profiler\FileProfilerStorage" public="false">
-          <argument>file:/home/gab/workspace/Symfony/var/cache/dev/profiler</argument>
+          <argument>file:/home/gab/workspace/symfony/sf3-advert/var/cache/dev/profiler</argument>
         </service>
       </argument>
       <argument type="service" id="monolog.logger.profiler" on-invalid="null"/>
@@ -2197,7 +2308,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>584a6f5be8e1f0.19004851</argument>
+            <argument>59157a28478334.16774613</argument>
           </service>
         </argument>
       </argument>
@@ -2526,7 +2637,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.token_storage"/>
-            <argument>584a6f5be8e1f0.19004851</argument>
+            <argument>59157a28478334.16774613</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2585,7 +2696,7 @@
         </argument>
         <argument key="exception_controller">twig.controller.exception:showAction</argument>
         <argument key="autoescape">name</argument>
-        <argument key="cache">/home/gab/workspace/Symfony/var/cache/dev/twig</argument>
+        <argument key="cache">/home/gab/workspace/symfony/sf3-advert/var/cache/dev/twig</argument>
         <argument key="charset">UTF-8</argument>
         <argument key="paths" type="collection"/>
         <argument key="date" type="collection">
@@ -2648,7 +2759,7 @@
           <service class="Symfony\Bridge\Twig\Extension\CodeExtension" public="false">
             <tag name="twig.extension"/>
             <argument>null</argument>
-            <argument>/home/gab/workspace/Symfony/app</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/app</argument>
             <argument>UTF-8</argument>
           </service>
         </argument>
@@ -2703,6 +2814,13 @@
       </call>
       <call method="addExtension">
         <argument type="service">
+          <service class="Twig_Extension_Debug" public="false">
+            <tag name="twig.extension"/>
+          </service>
+        </argument>
+      </call>
+      <call method="addExtension">
+        <argument type="service">
           <service class="Symfony\Bridge\Twig\Extension\FormExtension" public="false">
             <tag name="twig.extension"/>
             <argument type="service">
@@ -2718,13 +2836,6 @@
                 <argument type="service" id="security.csrf.token_manager" on-invalid="null"/>
               </service>
             </argument>
-          </service>
-        </argument>
-      </call>
-      <call method="addExtension">
-        <argument type="service">
-          <service class="Twig_Extension_Debug" public="false">
-            <tag name="twig.extension"/>
           </service>
         </argument>
       </call>
@@ -2855,7 +2966,7 @@
     </service>
     <service id="monolog.processor.psr_log_message" class="Monolog\Processor\PsrLogMessageProcessor" public="false"/>
     <service id="monolog.handler.main" class="Monolog\Handler\RotatingFileHandler">
-      <argument>/home/gab/workspace/Symfony/var/logs/dev.log</argument>
+      <argument>/home/gab/workspace/symfony/sf3-advert/var/logs/dev.log</argument>
       <argument>5</argument>
       <argument>100</argument>
       <argument>true</argument>
@@ -2909,7 +3020,7 @@
         <argument key="driver">pdo_mysql</argument>
         <argument key="host">127.0.0.1</argument>
         <argument key="port">null</argument>
-        <argument key="dbname">symfony</argument>
+        <argument key="dbname">sf3-advert</argument>
         <argument key="user">root</argument>
         <argument key="password">1234</argument>
         <argument key="charset">UTF8</argument>
@@ -2956,6 +3067,19 @@
           </call>
           <call method="addEventSubscriber">
             <argument type="service">
+              <service class="Vich\UploaderBundle\EventListener\Doctrine\UploadListener" public="false">
+                <tag name="doctrine.event_subscriber" priority="0"/>
+                <argument>attachement_document</argument>
+                <argument type="service">
+                  <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
+                </argument>
+                <argument type="service" id="vich_uploader.metadata_reader"/>
+                <argument type="service" id="vich_uploader.upload_handler"/>
+              </service>
+            </argument>
+          </call>
+          <call method="addEventSubscriber">
+            <argument type="service">
               <service class="Vich\UploaderBundle\EventListener\Doctrine\RemoveListener" public="false">
                 <tag name="doctrine.event_subscriber" priority="0"/>
                 <argument>attachement_document</argument>
@@ -2986,25 +3110,6 @@
               </service>
             </argument>
           </call>
-          <call method="addEventSubscriber">
-            <argument type="service">
-              <service class="Vich\UploaderBundle\EventListener\Doctrine\UploadListener" public="false">
-                <tag name="doctrine.event_subscriber" priority="0"/>
-                <argument>attachement_document</argument>
-                <argument type="service">
-                  <service class="Vich\UploaderBundle\Adapter\ORM\DoctrineORMAdapter" public="false"/>
-                </argument>
-                <argument type="service" id="vich_uploader.metadata_reader"/>
-                <argument type="service" id="vich_uploader.upload_handler"/>
-              </service>
-            </argument>
-          </call>
-          <call method="addEventListener">
-            <argument type="collection">
-              <argument>loadClassMetadata</argument>
-            </argument>
-            <argument type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
-          </call>
           <call method="addEventListener">
             <argument type="collection">
               <argument>postPersist</argument>
@@ -3016,6 +3121,12 @@
               <argument>prePersist</argument>
             </argument>
             <argument type="service" id="gbrfix_platform.doctrine_listener.advert_creation"/>
+          </call>
+          <call method="addEventListener">
+            <argument type="collection">
+              <argument>loadClassMetadata</argument>
+            </argument>
+            <argument type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
           </call>
         </service>
       </argument>
@@ -3040,20 +3151,22 @@
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_metadata_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_a356b662338958299dd5d11b392f7be9e0b4e888c4065a034e22bbfdec267374</argument>
+        <argument>sf2orm_default_93f1cf779a742625462d7e4f004b87770787bcbb75d0375a2c62ccb639bbe155</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_result_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_a356b662338958299dd5d11b392f7be9e0b4e888c4065a034e22bbfdec267374</argument>
+        <argument>sf2orm_default_93f1cf779a742625462d7e4f004b87770787bcbb75d0375a2c62ccb639bbe155</argument>
       </call>
     </service>
     <service id="doctrine_cache.providers.doctrine.orm.default_query_cache" class="Doctrine\Common\Cache\ArrayCache">
       <call method="setNamespace">
-        <argument>sf2orm_default_a356b662338958299dd5d11b392f7be9e0b4e888c4065a034e22bbfdec267374</argument>
+        <argument>sf2orm_default_93f1cf779a742625462d7e4f004b87770787bcbb75d0375a2c62ccb639bbe155</argument>
       </call>
     </service>
-    <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\ORM\Mapping\DefaultEntityListenerResolver"/>
+    <service id="doctrine.orm.default_entity_listener_resolver" class="Doctrine\Bundle\DoctrineBundle\Mapping\ContainerAwareEntityListenerResolver">
+      <argument type="service" id="service_container"/>
+    </service>
     <service id="doctrine.orm.default_listeners.attach_entity_listeners" class="Doctrine\ORM\Tools\AttachEntityListenersListener">
       <tag name="doctrine.event_listener" event="loadClassMetadata"/>
     </service>
@@ -3088,8 +3201,8 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>/home/gab/workspace/Symfony/src/Gbrfix/PlatformBundle/Entity</argument>
-                        <argument>/home/gab/workspace/Symfony/src/Gbrfix/UserBundle/Entity</argument>
+                        <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/PlatformBundle/Entity</argument>
+                        <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/UserBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -3100,8 +3213,8 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>/home/gab/workspace/Symfony/src/Gbrfix/PlatformBundle/Entity</argument>
-                        <argument>/home/gab/workspace/Symfony/src/Gbrfix/UserBundle/Entity</argument>
+                        <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/PlatformBundle/Entity</argument>
+                        <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/UserBundle/Entity</argument>
                       </argument>
                     </service>
                   </argument>
@@ -3113,7 +3226,7 @@
                       <argument type="service">
                         <service class="Doctrine\Common\Persistence\Mapping\Driver\SymfonyFileLocator">
                           <argument type="collection">
-                            <argument key="/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping">FOS\UserBundle\Model</argument>
+                            <argument key="/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/config/doctrine-mapping">FOS\UserBundle\Model</argument>
                           </argument>
                           <argument>.orm.xml</argument>
                         </service>
@@ -3126,7 +3239,7 @@
             </argument>
           </call>
           <call method="setProxyDir">
-            <argument>/home/gab/workspace/Symfony/var/cache/dev/doctrine/orm/Proxies</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev/doctrine/orm/Proxies</argument>
           </call>
           <call method="setProxyNamespace">
             <argument>Proxies</argument>
@@ -3419,7 +3532,7 @@
             </argument>
             <argument type="service">
               <service class="Assetic\Cache\ConfigCache" public="false">
-                <argument>/home/gab/workspace/Symfony/var/cache/dev/assetic/config</argument>
+                <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev/assetic/config</argument>
               </service>
             </argument>
             <argument>true</argument>
@@ -3436,7 +3549,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>FrameworkBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/FrameworkBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/FrameworkBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3444,7 +3557,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>FrameworkBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3463,7 +3576,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SecurityBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/SecurityBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/SecurityBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3471,7 +3584,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SecurityBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3490,7 +3603,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>TwigBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/TwigBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/TwigBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3498,7 +3611,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>TwigBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3517,7 +3630,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>MonologBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/MonologBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/MonologBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3525,7 +3638,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>MonologBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/symfony/monolog-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/monolog-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3544,7 +3657,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SwiftmailerBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/SwiftmailerBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/SwiftmailerBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3552,7 +3665,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SwiftmailerBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3571,7 +3684,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>DoctrineBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/DoctrineBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/DoctrineBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3579,7 +3692,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>DoctrineBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/doctrine/doctrine-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3598,7 +3711,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioFrameworkExtraBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/SensioFrameworkExtraBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/SensioFrameworkExtraBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3606,7 +3719,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioFrameworkExtraBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/sensio/framework-extra-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/sensio/framework-extra-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3625,7 +3738,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>GbrfixPlatformBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/GbrfixPlatformBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/GbrfixPlatformBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3633,7 +3746,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>GbrfixPlatformBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/src/Gbrfix/PlatformBundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/PlatformBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3652,7 +3765,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>StofDoctrineExtensionsBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/StofDoctrineExtensionsBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/StofDoctrineExtensionsBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3660,7 +3773,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>StofDoctrineExtensionsBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/stof/doctrine-extensions-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/stof/doctrine-extensions-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3679,7 +3792,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>GbrfixUserBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/GbrfixUserBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/GbrfixUserBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3687,7 +3800,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>GbrfixUserBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/src/Gbrfix/UserBundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/UserBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3706,7 +3819,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>FOSUserBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/FOSUserBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/FOSUserBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3714,7 +3827,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>FOSUserBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3733,7 +3846,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>GbrfixBigbrotherBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/GbrfixBigbrotherBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/GbrfixBigbrotherBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3741,7 +3854,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>GbrfixBigbrotherBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/src/Gbrfix/BigbrotherBundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/BigbrotherBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3760,7 +3873,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>AsseticBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/AsseticBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/AsseticBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3768,7 +3881,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>AsseticBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/symfony/assetic-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/assetic-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3787,7 +3900,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>VichUploaderBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/VichUploaderBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/VichUploaderBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3795,7 +3908,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>VichUploaderBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3814,7 +3927,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>DebugBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/DebugBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/DebugBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3822,7 +3935,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>DebugBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3841,7 +3954,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>WebProfilerBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/WebProfilerBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/WebProfilerBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3849,7 +3962,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>WebProfilerBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3868,7 +3981,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioDistributionBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/SensioDistributionBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/SensioDistributionBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3876,7 +3989,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioDistributionBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/sensio/distribution-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/sensio/distribution-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3895,7 +4008,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioGeneratorBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/SensioGeneratorBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/SensioGeneratorBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3903,7 +4016,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>SensioGeneratorBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/sensio/generator-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/sensio/generator-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3922,7 +4035,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>DoctrineFixturesBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/DoctrineFixturesBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/DoctrineFixturesBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3930,7 +4043,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>DoctrineFixturesBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/doctrine/doctrine-fixtures-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/doctrine/doctrine-fixtures-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3949,7 +4062,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>CoreSphereConsoleBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/app/Resources/CoreSphereConsoleBundle/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/CoreSphereConsoleBundle/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3957,7 +4070,7 @@
                 <service class="%assetic.directory_resource.class%" public="false">
                   <argument type="service" id="templating.loader"/>
                   <argument>CoreSphereConsoleBundle</argument>
-                  <argument>/home/gab/workspace/Symfony/vendor/coresphere/console-bundle/Resources/views</argument>
+                  <argument>/home/gab/workspace/symfony/sf3-advert/vendor/coresphere/console-bundle/Resources/views</argument>
                   <argument>/\.[^.]+\.twig$/</argument>
                 </service>
               </argument>
@@ -3973,7 +4086,7 @@
             <tag name="assetic.formula_resource" loader="twig"/>
             <argument type="service" id="templating.loader"/>
             <argument></argument>
-            <argument>/home/gab/workspace/Symfony/app/Resources/views</argument>
+            <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/views</argument>
             <argument>/\.[^.]+\.twig$/</argument>
           </service>
         </argument>
@@ -3988,7 +4101,7 @@
           <factory service="service_container" method="getParameterBag"/>
         </service>
       </argument>
-      <argument>/home/gab/workspace/Symfony/app/../web</argument>
+      <argument>/home/gab/workspace/symfony/sf3-advert/app/../web</argument>
       <argument>true</argument>
       <call method="addWorker">
         <argument type="service">
@@ -4032,7 +4145,7 @@
       <argument type="service" id="assetic.asset_manager"/>
       <argument type="service">
         <service class="Assetic\Cache\FilesystemCache" public="false">
-          <argument>/home/gab/workspace/Symfony/var/cache/dev/assetic/assets</argument>
+          <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev/assetic/assets</argument>
         </service>
       </argument>
       <argument>false</argument>
@@ -4082,7 +4195,7 @@
           <call method="setCache">
             <argument type="service">
               <service class="Metadata\Cache\FileCache" public="false">
-                <argument>/home/gab/workspace/Symfony/var/cache/dev/vich_uploader</argument>
+                <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev/vich_uploader</argument>
               </service>
             </argument>
           </call>
@@ -4095,7 +4208,7 @@
       <argument type="collection">
         <argument key="attachement_document" type="collection">
           <argument key="uri_prefix">/docs</argument>
-          <argument key="upload_destination">/home/gab/workspace/Symfony/app/../web/uploads/docs</argument>
+          <argument key="upload_destination">/home/gab/workspace/symfony/sf3-advert/app/../web/uploads/docs</argument>
           <argument key="inject_on_load">false</argument>
           <argument key="delete_on_update">true</argument>
           <argument key="delete_on_remove">true</argument>
@@ -4103,7 +4216,10 @@
             <argument key="service">null</argument>
             <argument key="options">null</argument>
           </argument>
-          <argument key="directory_namer">null</argument>
+          <argument key="directory_namer" type="collection">
+            <argument key="service">null</argument>
+            <argument key="options">null</argument>
+          </argument>
           <argument key="db_driver">orm</argument>
         </argument>
       </argument>
@@ -4112,17 +4228,17 @@
     <service id="vich_uploader.namer_uniqid" class="Vich\UploaderBundle\Naming\UniqidNamer"/>
     <service id="vich_uploader.namer_property" class="Vich\UploaderBundle\Naming\PropertyNamer"/>
     <service id="vich_uploader.namer_origname" class="Vich\UploaderBundle\Naming\OrignameNamer"/>
+    <service id="vich_uploader.namer_hash" class="Vich\UploaderBundle\Naming\HashNamer"/>
+    <service id="vich_uploader.directory_namer_subdir" class="Vich\UploaderBundle\Naming\SubdirDirectoryNamer"/>
     <service id="vich_uploader.form.type.file" class="Vich\UploaderBundle\Form\Type\VichFileType">
       <tag name="form.type" alias="vich_file"/>
       <argument type="service" id="vich_uploader.storage"/>
       <argument type="service" id="vich_uploader.upload_handler"/>
-      <argument type="service" id="translator"/>
     </service>
     <service id="vich_uploader.form.type.image" class="Vich\UploaderBundle\Form\Type\VichImageType">
       <tag name="form.type" alias="vich_image"/>
       <argument type="service" id="vich_uploader.storage"/>
       <argument type="service" id="vich_uploader.upload_handler"/>
-      <argument type="service" id="translator"/>
     </service>
     <service id="vich_uploader.download_handler" class="Vich\UploaderBundle\Handler\DownloadHandler">
       <argument type="service" id="vich_uploader.property_mapping_factory"/>
@@ -4292,6 +4408,9 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
     </service>
     <service id="monolog.logger.translation" class="Symfony\Bridge\Monolog\Logger">
       <argument>translation</argument>
@@ -4300,6 +4419,9 @@
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.cache" class="Symfony\Bridge\Monolog\Logger">
@@ -4310,6 +4432,9 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
     </service>
     <service id="monolog.logger.templating" class="Symfony\Bridge\Monolog\Logger">
       <argument>templating</argument>
@@ -4318,6 +4443,9 @@
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.profiler" class="Symfony\Bridge\Monolog\Logger">
@@ -4328,6 +4456,9 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
     </service>
     <service id="monolog.logger.router" class="Symfony\Bridge\Monolog\Logger">
       <argument>router</argument>
@@ -4336,6 +4467,9 @@
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.php" class="Symfony\Bridge\Monolog\Logger">
@@ -4346,11 +4480,14 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
     </service>
     <service id="monolog.logger.event" class="Symfony\Bridge\Monolog\Logger">
       <argument>event</argument>
       <call method="pushHandler">
-        <argument type="service" id="monolog.handler.null_internal"/>
+        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.security" class="Symfony\Bridge\Monolog\Logger">
@@ -4361,11 +4498,17 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
     </service>
     <service id="monolog.logger.doctrine" class="Symfony\Bridge\Monolog\Logger">
       <argument>doctrine</argument>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
       </call>
     </service>
     <service id="monolog.logger.assetic" class="Symfony\Bridge\Monolog\Logger">
@@ -4376,15 +4519,22 @@
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
       </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
+      </call>
+    </service>
+    <service id="monolog.handler.debug" class="Symfony\Bridge\Monolog\Handler\DebugHandler">
+      <argument>100</argument>
+      <argument>true</argument>
     </service>
     <service id="monolog.handler.null_internal" class="Monolog\Handler\NullHandler"/>
     <service id="session.storage.filesystem" class="Symfony\Component\HttpFoundation\Session\Storage\MockFileSessionStorage">
-      <argument>/home/gab/workspace/Symfony/var/cache/dev/sessions</argument>
+      <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev/sessions</argument>
       <argument>MOCKSESSID</argument>
       <argument type="service" id="session.storage.metadata_bag"/>
     </service>
     <service id="session.handler" class="Symfony\Component\HttpFoundation\Session\Storage\Handler\NativeFileSessionHandler">
-      <argument>/home/gab/workspace/Symfony/app/../var/sessions/dev</argument>
+      <argument>/home/gab/workspace/symfony/sf3-advert/app/../var/sessions/dev</argument>
     </service>
     <service id="templating.loader" class="Symfony\Bundle\FrameworkBundle\Templating\Loader\FilesystemLoader">
       <argument type="service" id="templating.locator"/>
@@ -4405,16 +4555,12 @@
         </service>
       </argument>
     </service>
-    <service id="cache.default_redis_provider" class="Redis">
-      <argument>redis://localhost</argument>
-      <factory class="Symfony\Component\Cache\Adapter\RedisAdapter" method="createConnection"/>
-    </service>
     <service id="router" class="Symfony\Bundle\FrameworkBundle\Routing\Router">
       <tag name="monolog.logger" channel="router"/>
       <argument type="service" id="service_container"/>
-      <argument>/home/gab/workspace/Symfony/var/cache/dev/assetic/routing.yml</argument>
+      <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev/assetic/routing.yml</argument>
       <argument type="collection">
-        <argument key="cache_dir">/home/gab/workspace/Symfony/var/cache/dev</argument>
+        <argument key="cache_dir">/home/gab/workspace/symfony/sf3-advert/var/cache/dev</argument>
         <argument key="debug">true</argument>
         <argument key="generator_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
         <argument key="generator_base_class">Symfony\Component\Routing\Generator\UrlGenerator</argument>
@@ -4441,7 +4587,7 @@
       </argument>
       <argument type="service">
         <service class="Doctrine\Common\Cache\FilesystemCache" public="false">
-          <argument>/home/gab/workspace/Symfony/var/cache/dev/annotations</argument>
+          <argument>/home/gab/workspace/symfony/sf3-advert/var/cache/dev/annotations</argument>
         </service>
       </argument>
       <argument>true</argument>
@@ -4469,73 +4615,6 @@
       <argument type="service" id="security.encoder_factory"/>
     </service>
     <service id="security.user_checker.main" class="Symfony\Component\Security\Core\User\UserChecker"/>
-    <service id="twig.loader" class="Symfony\Bundle\TwigBundle\Loader\FilesystemLoader">
-      <tag name="twig.loader"/>
-      <argument type="service" id="templating.locator"/>
-      <argument type="service" id="templating.name_parser"/>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
-        <argument>Framework</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
-        <argument>Security</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/app/Resources/TwigBundle/views</argument>
-        <argument>Twig</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
-        <argument>Twig</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
-        <argument>Swiftmailer</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/vendor/doctrine/doctrine-bundle/Resources/views</argument>
-        <argument>Doctrine</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/src/Gbrfix/PlatformBundle/Resources/views</argument>
-        <argument>GbrfixPlatform</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/src/Gbrfix/UserBundle/Resources/views</argument>
-        <argument>GbrfixUser</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
-        <argument>FOSUser</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/src/Gbrfix/BigbrotherBundle/Resources/views</argument>
-        <argument>GbrfixBigbrother</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/vendor/vich/uploader-bundle/Resources/views</argument>
-        <argument>VichUploader</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
-        <argument>Debug</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
-        <argument>WebProfiler</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/vendor/coresphere/console-bundle/Resources/views</argument>
-        <argument>CoreSphereConsole</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/app/Resources/views</argument>
-      </call>
-      <call method="addPath">
-        <argument>/home/gab/workspace/Symfony/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
-      </call>
-    </service>
     <service id="logger" class="Symfony\Bridge\Monolog\Logger">
       <argument>app</argument>
       <call method="useMicrosecondTimestamps">
@@ -4546,6 +4625,9 @@
       </call>
       <call method="pushHandler">
         <argument type="service" id="monolog.handler.main"/>
+      </call>
+      <call method="pushHandler">
+        <argument type="service" id="monolog.handler.debug"/>
       </call>
       <autowiring-type>Psr\Log\LoggerInterface</autowiring-type>
     </service>
@@ -4619,21 +4701,21 @@
       <argument type="service" id="router"/>
       <argument type="service" id="templating"/>
       <argument type="collection">
-        <argument key="confirmation.template">FOSUserBundle:Registration:email.txt.twig</argument>
-        <argument key="resetting.template">FOSUserBundle:Resetting:email.txt.twig</argument>
+        <argument key="confirmation.template">@FOSUser/Registration/email.txt.twig</argument>
+        <argument key="resetting.template">@FOSUser/Resetting/email.txt.twig</argument>
         <argument key="from_email" type="collection">
           <argument key="confirmation" type="collection">
-            <argument key="webmaster@example.com">webmaster</argument>
+            <argument key="gabriel.ruffieux@bluewin.ch">Gabriel Ruffieux</argument>
           </argument>
           <argument key="resetting" type="collection">
-            <argument key="webmaster@example.com">webmaster</argument>
+            <argument key="gabriel.ruffieux@bluewin.ch">Gabriel Ruffieux</argument>
           </argument>
         </argument>
       </argument>
     </service>
     <service id="fos_user.util.email_canonicalizer" class="FOS\UserBundle\Util\Canonicalizer"/>
     <service id="fos_user.util.token_generator" class="FOS\UserBundle\Util\TokenGenerator"/>
-    <service id="fos_user.user_manager" class="FOS\UserBundle\Doctrine\UserManager" lazy="true">
+    <service id="fos_user.user_manager" class="FOS\UserBundle\Doctrine\UserManager">
       <argument type="service" id="fos_user.util.password_updater"/>
       <argument type="service" id="fos_user.util.canonical_fields_updater"/>
       <argument type="service">
@@ -4646,6 +4728,73 @@
     </service>
     <service id="vich_uploader.storage" class="Vich\UploaderBundle\Storage\FileSystemStorage">
       <argument type="service" id="vich_uploader.property_mapping_factory"/>
+    </service>
+    <service id="twig.loader" class="Symfony\Bundle\TwigBundle\Loader\FilesystemLoader">
+      <tag name="twig.loader"/>
+      <argument type="service" id="templating.locator"/>
+      <argument type="service" id="templating.name_parser"/>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/views</argument>
+        <argument>Framework</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/SecurityBundle/Resources/views</argument>
+        <argument>Security</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/TwigBundle/views</argument>
+        <argument>Twig</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views</argument>
+        <argument>Twig</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/swiftmailer-bundle/Resources/views</argument>
+        <argument>Swiftmailer</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/doctrine/doctrine-bundle/Resources/views</argument>
+        <argument>Doctrine</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/PlatformBundle/Resources/views</argument>
+        <argument>GbrfixPlatform</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/UserBundle/Resources/views</argument>
+        <argument>GbrfixUser</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/src/Gbrfix/UserBundle/Resources/views</argument>
+        <argument>FOSUser</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/friendsofsymfony/user-bundle/Resources/views</argument>
+        <argument>FOSUser</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/vich/uploader-bundle/Resources/views</argument>
+        <argument>VichUploader</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views</argument>
+        <argument>Debug</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>
+        <argument>WebProfiler</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/coresphere/console-bundle/Resources/views</argument>
+        <argument>CoreSphereConsole</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/app/Resources/views</argument>
+      </call>
+      <call method="addPath">
+        <argument>/home/gab/workspace/symfony/sf3-advert/vendor/symfony/symfony/src/Symfony/Bridge/Twig/Resources/views/Form</argument>
+      </call>
     </service>
     <service id="session.storage" alias="session.storage.native"/>
     <service id="event_dispatcher" alias="debug.event_dispatcher"/>

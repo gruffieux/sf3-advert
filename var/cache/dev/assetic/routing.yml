@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: /home/gab/workspace/Symfony/app/config/routing_dev.yml
+    resource: /home/gab/workspace/symfony/sf3-advert/app/config/routing_dev.yml

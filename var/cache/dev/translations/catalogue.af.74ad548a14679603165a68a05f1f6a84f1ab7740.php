@@ -79,7 +79,7 @@ $catalogue = new MessageCatalogue('af', array (
     'profile.flash.updated' => 'Die profiel was opgedateer',
     'change_password.submit' => 'Verander wagwoord',
     'change_password.flash.success' => 'Die wagwoord was verander',
-    'registration.check_emai' => '\'n e-pos was gestuur na %email%. Dit behels \'n aktiveerings "link", waarop jy moet klik om jou rekening te aktiveer',
+    'registration.check_email' => '\'n E-pos was gestuur na %email%. Dit behels aktiveerings skakel, waarop jy moet klik om jou rekening te aktiveer',
     'registration.confirmed' => 'Geluk %username%, jou rekening is nou geaktiveer',
     'registration.back' => 'Terug na die oorsprongblad',
     'registration.submit' => 'Registreer',
@@ -87,12 +87,18 @@ $catalogue = new MessageCatalogue('af', array (
     'registration.email.subject' => 'Welkom %username%!',
     'registration.email.message' => 'Hello %username%!
 
-Om die registrasieproses te finaliseer, besoek asseblief %confirmationUrl%
+Om die registrasie proses te finaliseer, besoek asseblief %confirmationUrl%
+
+Hierdie skakel kan slegs een keer gebruik word.
 
 Groete,
 die Span.
 ',
-    'resetting.check_email' => '\'n E-pos was gestuur na %email%. Die bevat \'n "link" waarop jy moet klik om jou wagwoord te herstel',
+    'resetting.check_email' => '\'n E-pos was gestuur na %email%. Dit bevat \'n skakel waarop jy moet klik om jou wagwoord te herstel.
+Nota: Jy kan eers weer \'n nuwe skakel versoek na %tokenLifetime% ure.
+
+As jy nie \'n e-pos kry nie, kyk in jou "spam" leer en probeer weer.
+',
     'resetting.request.username' => 'Verbruikernaam of e-pos adres',
     'resetting.request.submit' => 'Herstel wagwoord',
     'resetting.reset.submit' => 'Verander wagwoord',
@@ -308,8 +314,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -325,7 +334,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

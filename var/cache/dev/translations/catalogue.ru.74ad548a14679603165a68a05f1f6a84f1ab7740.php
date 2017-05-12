@@ -145,18 +145,24 @@ $catalogue = new MessageCatalogue('ru', array (
     'registration.check_email' => 'Письмо отправлено на адрес %email%. В нём содержится ссылка, по которой вы можете подтвердить свою регистрацию.',
     'registration.confirmed' => 'Поздравляем %username%, ваш аккаунт подтвержден.',
     'registration.back' => 'Вернуться на предыдущую страницу.',
-    'registration.submit' => 'Регистрация',
+    'registration.submit' => 'Зарегистрироваться',
     'registration.flash.user_created' => 'Пользователь успешно создан.',
     'registration.email.subject' => 'Добро пожаловать, %username%!',
     'registration.email.message' => 'Приветствуем, %username%!
 
 Для подтверждения вашей регистрации, пройдите по ссылке %confirmationUrl%
 
+Эта ссылка может быть использована только единожды для подтверждения вашей учетной записи.
+
 С наилучшими пожеланиями,
 команда сайта.
 ',
-    'resetting.check_email' => 'Письмо на адрес %email% уже отправлено. Оно содержит ссылку, при переходе по которой ваш пароль будет сброшен.',
-    'resetting.request.username' => 'Имя пользователя',
+    'resetting.check_email' => 'Письмо отправлено. Оно содержит ссылку, при переходе по которой ваш пароль будет сброшен.
+Заметьте, вы сможете запросить новый пароль только через %tokenLifetime% часов.
+
+Если вы не получили письмо, проверьте папку Спам или попробуйте снова.
+',
+    'resetting.request.username' => 'Имя пользователя или электронная почта',
     'resetting.request.submit' => 'Сбросить пароль',
     'resetting.reset.submit' => 'Изменить пароль',
     'resetting.flash.success' => 'Пароль успешно сброшен.',
@@ -386,8 +392,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -403,7 +412,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

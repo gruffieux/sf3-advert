@@ -102,6 +102,7 @@ $catalogue = new MessageCatalogue('lv', array (
     'fos_user.group.blank' => 'Lūdzu ievadiet nosaukumu.',
     'fos_user.group.short' => 'Nosaukums ir pārāk īss.',
     'fos_user.group.long' => 'Nosaukums ir pārāk garš.',
+    'fos_group.name.already_used' => 'Šis nosaukums tiek jau izmantots.',
   ),
   'security' => 
   array (
@@ -153,7 +154,6 @@ Lai pabeigtu aktivizēt savu kontu, lūdzu apmeklē %confirmationUrl%
 Jauku dienu,
 lapas kolektīvs.
 ',
-    'resetting.check_email' => 'Uz %email% tika nosūtīts e-pasts ar saiti, kurai jāseko, lai atiestatītu paroli.',
     'resetting.request.username' => 'Lietotājvārds vai e-pasta adrese',
     'resetting.request.submit' => 'Atiestatīt paroli',
     'resetting.reset.submit' => 'Nomainīt paroli',
@@ -369,8 +369,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -386,7 +389,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

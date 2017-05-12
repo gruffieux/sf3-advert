@@ -77,24 +77,25 @@ $catalogue = new MessageCatalogue('fa', array (
     'This form should not contain extra fields.' => 'این فرم نباید فیلد اضافی داشته باشد.',
     'The uploaded file was too large. Please try to upload a smaller file.' => 'فایل بارگذاری شده بسیار بزرگ است. لطفا فایل کوچکتری را بارگزاری کنید.',
     'The CSRF token is invalid. Please try to resubmit the form.' => 'مقدار CSRF نامعتبر است. لطفا فرم را مجددا ارسال فرمایید..',
-    'fos_user.username.already_used' => 'نام‌کاربری قبلا ثبت شده است',
-    'fos_user.username.blank' => 'لطفا نام‌کاربری خود را وارد کنید',
-    'fos_user.username.short' => 'تعداد حروف نام‌کاربری کمتر از حد مجاز است',
-    'fos_user.username.long' => 'تعداد حروف نام‌کاربری بیشتر از حد مجاز است',
-    'fos_user.email.already_used' => 'رایانامه قبلا ثبت شده است',
-    'fos_user.email.blank' => 'لطفا رایانامه خود را وارد کنید',
-    'fos_user.email.short' => 'تعداد حروف رایانامه کمتر از حد مجاز است',
-    'fos_user.email.long' => 'تعداد حروف رایانامه بیشتر از حد مجاز است',
-    'fos_user.email.invalid' => 'رایانامه وارد شده مجاز نیست',
-    'fos_user.password.blank' => 'لطفا کلمه‌عبور خود را وارد کنید',
-    'fos_user.password.short' => 'تعداد حروف کلمه‌عبور کمتر از حد مجاز است',
-    'fos_user.password.mismatch' => 'کلمه عبور وارد شده هماهنگ نیست',
-    'fos_user.new_password.blank' => 'لطفا کلمه‌عبور خود را دوباره وارد کنید',
-    'fos_user.new_password.short' => 'تعداد حروف تکرار‌کلمه‌عبور کمتر از حد مجاز است',
-    'fos_user.current_password.invalid' => 'کلمه‌عبور فعلی مجاز نیست',
-    'fos_user.group.blank' => 'لطفا نام‌گروه را وارد کنید',
-    'fos_user.group.short' => 'تعداد حروف نام‌گروه وارد شده کمتر از حد مجاز است',
-    'fos_user.group.long' => 'تعداد حروف نام‌گروه وارد شده بیشتر از حد مجاز است',
+    'fos_user.username.already_used' => 'نام کاربری قبلا ثبت شده است',
+    'fos_user.username.blank' => 'لطفا یک نام کاربری وارد کنید',
+    'fos_user.username.short' => 'نام کاربری کوتاه‌تر از حد مجاز است',
+    'fos_user.username.long' => 'نام کاربری بلندتر از حد مجاز است',
+    'fos_user.email.already_used' => 'ایمیل قبلا ثبت شده است',
+    'fos_user.email.blank' => 'لطفا یک ایمیل وارد کنید',
+    'fos_user.email.short' => 'ایمیل کوتاه‌تر از حد مجاز است',
+    'fos_user.email.long' => 'ایمیل بلندتر از حد مجاز است',
+    'fos_user.email.invalid' => 'ایمیل وارد شده معتبر نیست',
+    'fos_user.password.blank' => 'لطفا یک کلمه عبور وارد کنید',
+    'fos_user.password.short' => 'کلمه عبور کوتاه‌تر از حد مجاز است',
+    'fos_user.password.mismatch' => 'کلمه عبور وارد شده با تکرارش متفاوت است',
+    'fos_user.new_password.blank' => 'لطفا یک کلمه عبور جدید وارد کنید',
+    'fos_user.new_password.short' => '‌کلمه عبور جدید کوتاه‌تر از حد مجاز است',
+    'fos_user.current_password.invalid' => 'کلمه عبور فعلی معتبر نیست',
+    'fos_user.group.blank' => 'لطفا یک نام برای گروه وارد کنید',
+    'fos_user.group.short' => 'نام گروه وارد شده گوتاه‌تر از حد مجاز است',
+    'fos_user.group.long' => 'نام گروه وارد شده بلندتر از حد مجاز است',
+    'fos_group.name.already_used' => 'نام وارد شده قبلا ثبت شده است.',
   ),
   'security' => 
   array (
@@ -117,60 +118,67 @@ $catalogue = new MessageCatalogue('fa', array (
   ),
   'FOSUserBundle' => 
   array (
-    'group.edit.submit' => 'بهنگام سازی',
+    'group.edit.submit' => 'به‌روزرسانی',
     'group.show.name' => 'نام گروه',
     'group.new.submit' => 'ایجاد گروه',
-    'group.flash.updated' => 'گروه بهنگام شده است',
-    'group.flash.created' => 'گروه ساخته شده است',
-    'group.flash.deleted' => 'گروه حذف شده است',
+    'group.flash.updated' => 'گروه با موفقیت به‌روز شد',
+    'group.flash.created' => 'گروه با موفقیت ایجاد شد',
+    'group.flash.deleted' => 'گروه با موفقیت حذف شد',
     'security.login.username' => 'نام کاربری',
     'security.login.password' => 'کلمه عبور',
-    'security.login.remember_me' => 'مرا به یاد سپار',
+    'security.login.remember_me' => 'مشخصات ورود من را به خاطر بسپار',
     'security.login.submit' => 'ورود',
     'profile.show.username' => 'نام کاربری',
     'profile.show.email' => 'ایمیل',
-    'profile.edit.submit' => 'بهنگام سازی',
-    'profile.flash.updated' => 'نمایه بهنگام شده است',
+    'profile.edit.submit' => 'به‌روزرسانی',
+    'profile.flash.updated' => 'پروفایل کاربری با موفقیت به‌روز شد',
     'change_password.submit' => 'تغییر کلمه عبور',
-    'change_password.flash.success' => 'کلمه عبور تغییر کرده است',
-    'registration.check_email' => 'ایمیلی به %email% فرستاده شده است. این ایمیل دارای پیوندی است که برای فعال سازی باید روی آن کلیک کنید.',
-    'registration.confirmed' => '%username% تبریک, کاربری شما اکنون فعال شده است.',
-    'registration.back' => 'برگشت به صفحه اصلی.',
+    'change_password.flash.success' => 'کلمه عبور با موفقیت تغییر کرد',
+    'registration.check_email' => 'ایمیلی به %email% فرستاده شده است. این ایمیل حاوی لینکی است که برای فعال سازی باید روی آن کلیک کنید.
+',
+    'registration.confirmed' => '%username% عزیز، نام کاربری شما با موفقیت فعال شد.',
+    'registration.back' => 'بازگشت به صفحه قبلی',
     'registration.submit' => 'ثبت نام',
-    'registration.flash.user_created' => 'کاربر با موفقیت ساخته شده است',
+    'registration.flash.user_created' => 'کاربر با موفقیت ساخته شد',
     'registration.email.subject' => '%username% خوش آمدید!',
     'registration.email.message' => '%username% سلام!
 
-برای تکمیل فعال سازی کاربری خود - لطفا %confirmationUrl% را مشاهده کنید
+برای تکمیل فعال سازی نام کاربری خود لطفا %confirmationUrl% را مشاهده کنید
+
+از این لینک تنها یک بار می توان برای فعال سازی نام کاربری استفاده کرد.
 
 با احترام،
-تیم.
+گروه پشتیبانی
 ',
-    'resetting.check_email' => 'ایمیلی به %email% فرستاده شده است. این ایمیل دارای پیوندی است که برای بازنشانی کلمه عبور باید روی آن کلیک کنید.',
+    'resetting.check_email' => 'ایمیلی به نشانی شما فرستاده شده است. این ایمیل حاوی لینکی است که برای فعال سازی باید روی آن کلیک کنید.
+لطفا توجه کنید که در هر %tokenLifetime% ساعت تنها یک بار می توانید درخواست کلمه عبور جدید ارسال کنید.
+
+اگر ایمیلی با این مشخصات در باکس خود دریافت نکردید، لطفا پوشه اسپم خود را چک کرده و یا مجددا تلاش کنید.
+',
     'resetting.request.username' => 'نام کاربری یا ایمیل',
     'resetting.request.submit' => 'بازنشانی کلمه عبور',
     'resetting.reset.submit' => 'تغییر کلمه عبور',
-    'resetting.flash.success' => 'کلمه عبور با موفقیت بازنشانی شده است',
+    'resetting.flash.success' => 'کلمه عبور با موفقیت بازنشانی شد',
     'resetting.email.subject' => 'بازنشانی کلمه عبور',
     'resetting.email.message' => '%username% سلام!
 
-برای بازنشانی کلمه عبور خود - لطفا %confirmationUrl% را مشاهده کنید
+برای بازنشانی کلمه عبور خود لطفا %confirmationUrl% را مشاهده کنید
 
 با احترام،
-تیم.
+گروه پشتیبانی
 ',
     'layout.logout' => 'خروج',
     'layout.login' => 'ورود',
     'layout.register' => 'ثبت نام',
-    'layout.logged_in_as' => 'وارد شده با %username%',
+    'layout.logged_in_as' => 'ورود به عنوان %username%',
     'form.group_name' => 'نام گروه',
     'form.username' => 'نام کاربری',
     'form.email' => 'ایمیل',
-    'form.current_password' => 'کلمه عبور کنونی',
+    'form.current_password' => 'کلمه عبور فعلی',
     'form.password' => 'کلمه عبور',
-    'form.password_confirmation' => 'تایید کلمه عبور',
+    'form.password_confirmation' => 'تکرار کلمه عبور',
     'form.new_password' => 'کلمه عبور جدید',
-    'form.new_password_confirmation' => 'تایید کلمه عبور جدید',
+    'form.new_password_confirmation' => 'تکرار کلمه عبور جدید',
   ),
 ));
 
@@ -362,8 +370,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -379,7 +390,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',

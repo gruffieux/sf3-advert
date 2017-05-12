@@ -87,23 +87,24 @@ $catalogue = new MessageCatalogue('hu', array (
     'The uploaded file was too large. Please try to upload a smaller file.' => 'A feltöltött fájl túl nagy. Kérem, próbáljon egy kisebb fájlt feltölteni.',
     'The CSRF token is invalid. Please try to resubmit the form.' => 'Érvénytelen CSRF token. Kérem, próbálja újra elküldeni az űrlapot.',
     'fos_user.username.already_used' => 'A felhasználónév már foglalt.',
-    'fos_user.username.blank' => 'Kérjük, adjon meg egy felhasználónevet.',
+    'fos_user.username.blank' => 'A felhasználónév nem lehet üres.',
     'fos_user.username.short' => 'A felhasználónév túl rövid.',
     'fos_user.username.long' => 'A felhasználónév túl hosszú.',
-    'fos_user.email.already_used' => 'Az emailcím már használatban van.',
-    'fos_user.email.blank' => 'Kérjük, adjon meg egy emailcímet.',
-    'fos_user.email.short' => 'Az emailcím túl rövid.',
-    'fos_user.email.long' => 'Az emailcím túl hosszú.',
-    'fos_user.email.invalid' => 'A megadott emailcím helytelen.',
-    'fos_user.password.blank' => 'Kérjük, adjon meg egy jelszót.',
+    'fos_user.email.already_used' => 'Az e-mail cím már használatban van.',
+    'fos_user.email.blank' => 'Az e-mail cím nem lehet üres.',
+    'fos_user.email.short' => 'Az e-mail cím túl rövid.',
+    'fos_user.email.long' => 'Az e-mail cím túl hosszú.',
+    'fos_user.email.invalid' => 'A megadott e-mail cím helytelen.',
+    'fos_user.password.blank' => 'A jelszó nem lehet üres.',
     'fos_user.password.short' => 'A jelszó túl rövid.',
     'fos_user.password.mismatch' => 'A megadott jelszavak nem egyeznek.',
-    'fos_user.new_password.blank' => 'Kérjük, adjon meg egy új jelszót.',
+    'fos_user.new_password.blank' => 'Az új jelszó nem lehet üres.',
     'fos_user.new_password.short' => 'Az új jelszó túl rövid.',
     'fos_user.current_password.invalid' => 'A megadott jelszó helytelen.',
-    'fos_user.group.blank' => 'Kérjük, adjon meg egy nevet.',
+    'fos_user.group.blank' => 'A név nem lehet üres.',
     'fos_user.group.short' => 'A név túl rövid.',
     'fos_user.group.long' => 'A név túl hosszú.',
+    'fos_group.name.already_used' => 'A név már foglalt.',
   ),
   'security' => 
   array (
@@ -142,20 +143,26 @@ $catalogue = new MessageCatalogue('hu', array (
     'profile.flash.updated' => 'A profil frissítve.',
     'change_password.submit' => 'Jelszó megváltoztazása',
     'change_password.flash.success' => 'A jelszó megváltoztatva.',
-    'registration.check_email' => 'Egy e-mail lett küldve a(z) %email% címre. Egy aktivációs linket tartalmaz, amire rá kell kattintani a fiók aktiválásához.',
-    'registration.confirmed' => 'Gratulálunk %username%, a fiók visszaigazolva.',
+    'registration.check_email' => 'A regisztrált fiók aktiválásához a megadott "%email%" címre küldött üzenetben lévő aktivációs linkre kell kattintani.',
+    'registration.confirmed' => 'Gratulálunk %username%, a regisztrált fiók sikeresen aktiválásra került.',
     'registration.back' => 'Vissza az előző oldalra.',
     'registration.submit' => 'Regisztráció',
     'registration.flash.user_created' => 'A felhasználó sikeresen létrehozva.',
     'registration.email.subject' => 'Üdvözöljük %username%!',
     'registration.email.message' => 'Hello %username%!
 
-A fiókja visszaigazolásához kérjük látogasson el a következő linkre: %confirmationUrl%
+A regisztrált fiók a következő linkre kattintva aktiválható: %confirmationUrl%
+
+A link csak egyszer használható, rákattintás után ismételt felhasználása nem lehetséges.
 
 Üdvözlettel,
-the Team.
+a Csapat.
 ',
-    'resetting.check_email' => 'Egy e-mail lett küldve a(z) %email% címre. Egy linket tartalmaz, amire rá kell kattintani a jeszó lecseréléséhez.',
+    'resetting.check_email' => 'Elfelejtett jelszava lecseréléséhez, kérjük, kattintson az e-mailben található linkre.
+Felhívjuk figyelmát rá, hogy a link érvényessége %tokenLifetime% óra múlva lejár.
+
+Amennyiben nem találja az e-mailt a postafiókjában, ellenőrizze a levélszemét mappát vagy kérje újra a kiküldést!
+',
     'resetting.request.username' => 'Felhasználónév vagy e-mail cím',
     'resetting.request.submit' => 'Jelszó lecserélése',
     'resetting.reset.submit' => 'Jelszó megváltoztatása',
@@ -163,10 +170,10 @@ the Team.
     'resetting.email.subject' => 'Jelszó lecserélése',
     'resetting.email.message' => 'Hello %username%!
 
-A jelszó lecseréléséhez kérjük látogasson el a következő linkre: %confirmationUrl%
+A jelszó a következő oldalon cserélhető le: %confirmationUrl%
 
 Üdvözlettel,
-the Team.
+a Csapat.
 ',
     'layout.logout' => 'Kijelentkezés',
     'layout.login' => 'Bejelentkezés',
@@ -177,9 +184,9 @@ the Team.
     'form.email' => 'E-mail',
     'form.current_password' => 'Jelenlegi jelszó',
     'form.password' => 'Jelszó',
-    'form.password_confirmation' => 'Megerősítés',
+    'form.password_confirmation' => 'Jelszó megerősítése',
     'form.new_password' => 'Új jelszó',
-    'form.new_password_confirmation' => 'Megerősítés',
+    'form.new_password_confirmation' => 'Új jelszó megerősítése',
   ),
   'VichUploaderBundle' => 
   array (
@@ -376,8 +383,11 @@ $catalogueFr = new MessageCatalogue('fr', array (
 
 Pour valider votre compte utilisateur, merci de vous rendre sur %confirmationUrl%
 
+Ce lien ne peut être utilisé qu\'une seule fois pour valider votre compte.
+
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'resetting.check_email' => 'Un e-mail a été envoyé. Il contient un lien sur lequel il vous faudra cliquer pour réinitialiser votre mot de passe.
 Remarque : Vous ne pouvez demander un nouveau mot de passe que toutes les %tokenLifetime% heures.
 
@@ -393,7 +403,8 @@ Si vous ne recevez pas un email, vérifiez votre dossier spam ou essayez à nouv
 Pour réinitialiser votre mot de passe, merci de vous rendre sur %confirmationUrl%
 
 Cordialement,
-L\'équipe',
+L\'équipe
+',
     'layout.logout' => 'Déconnexion',
     'layout.login' => 'Connexion',
     'layout.register' => 'Inscription',
